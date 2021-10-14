@@ -1,0 +1,11 @@
+__self__:
+    abstract: True
+method: post
+headers:
+    Content-Type: application/x-www-form-urlencoded
+    Authorization: Basic Y2xpZW50YXBwOnBhc3N3b3Jk
+path: oauth/token
+data:
+    __self__:
+        format: x-www-form-urlencoded
+

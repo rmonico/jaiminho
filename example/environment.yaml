@@ -1,0 +1,14 @@
+environment:
+    sit:
+        __self__:
+            extends: no_verify_ssl
+    hlg:
+        __self__:
+            extends: no_verify_ssl
+    prd:
+        __self__:
+            extends: no_verify_ssl
+    stg:
+        __self__:
+            extends: no_verify_ssl
+

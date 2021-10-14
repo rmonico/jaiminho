@@ -1,0 +1,6 @@
+[description:"External file extension" entry:"1634230888" modified:"1634230974" status:"pending" uuid:"a833f66e-60aa-4c9a-9e5b-e42fc0c5ef44"]
+[description:"Variable expansion" entry:"1634230965" modified:"1634230965" status:"pending" uuid:"417dbb01-d43b-4868-beff-e8c91eeae945"]
+[description:"Remove __ entries" entry:"1634231039" modified:"1634231039" status:"pending" uuid:"f9af0ec3-a445-4282-ba07-a01571745c2d"]
+[description:"Apply __format__" entry:"1634231090" modified:"1634231090" status:"pending" uuid:"da627f54-7709-4517-9014-4dfd24c64766"]
+[description:"Requests folder parameter" entry:"1634234749" modified:"1634234749" status:"pending" uuid:"dd6ff0c0-7b78-480c-a5c3-3799720ef1ed"]
+[description:"Define better how parameters and extension will work" entry:"1634235446" modified:"1634235446" status:"pending" uuid:"31575921-d652-4b82-81df-b4f5e3c42c1b"]

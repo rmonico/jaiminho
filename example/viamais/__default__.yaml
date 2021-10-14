@@ -1,0 +1,18 @@
+__self__:
+    abstract: True
+    extends:
+        __self__: 
+            value: url
+            append:
+                case: environment
+                    sit,hlg,stg: no_verify_ssl
+    param_defaults:
+        enviroment: hlg
+protocol: https
+host:
+    __self__:
+        case: environment
+            sit,prd,stg: TODO
+            hlg: api.viamais-qa.ocp-eqx.dc.nova
+path: uaa
+
