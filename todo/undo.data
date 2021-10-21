@@ -20,3 +20,6 @@ new [description:"Requests folder parameter" entry:"1634234749" modified:"163423
 time 1634235446
 new [description:"Define better how parameters and extension will work" entry:"1634235446" modified:"1634235446" status:"pending" uuid:"31575921-d652-4b82-81df-b4f5e3c42c1b"]
 ---
+time 1634764393
+new [description:"Change argparse parameters accordingly parameters in URL" entry:"1634764393" modified:"1634764393" status:"pending" uuid:"081d1191-5203-4617-9644-868fd623b848"]
+---

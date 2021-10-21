@@ -5,3 +5,4 @@
 {"description":"Apply __format__","entry":"20211014T170450Z","modified":"20211014T170450Z","status":"pending","uuid":"da627f54-7709-4517-9014-4dfd24c64766"}
 {"description":"Requests folder parameter","entry":"20211014T180549Z","modified":"20211014T180549Z","status":"pending","uuid":"dd6ff0c0-7b78-480c-a5c3-3799720ef1ed"}
 {"description":"Define better how parameters and extension will work","entry":"20211014T181726Z","modified":"20211014T181726Z","status":"pending","uuid":"31575921-d652-4b82-81df-b4f5e3c42c1b"}
+{"description":"Change argparse parameters accordingly parameters in URL","entry":"20211020T211313Z","modified":"20211020T211313Z","status":"pending","uuid":"081d1191-5203-4617-9644-868fd623b848"}
