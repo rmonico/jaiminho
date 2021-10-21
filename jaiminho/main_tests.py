@@ -4,7 +4,8 @@ from argparse import Namespace
 import main
 
 
-class SkelTests(TestCase):
+class JaiminhoTests(TestCase):
+
     def test_request_file(self):
         main.args = Namespace(home_folder='/home/folder')
 
