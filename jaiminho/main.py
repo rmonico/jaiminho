@@ -25,7 +25,10 @@ def _parse_command_line():
                                                DEFAULT_HOME_FOLDER),
                         help='Set alternate home folder')
 
-    parser.add_argument('request', help='Request name')
+    parser.add_argument('--dry-run',
+                        help='Show arguments being used, actually do nothing')
+
+    parser.add_argument('request_name', help='Request name')
 
     logger_wrapper.make_verbosity_argument(parser)
 
@@ -89,14 +92,9 @@ def _make_extensions(arguments):
     return subargs
 
 
-def _do_request(args):
-    request_arguments = _get_request_arguments(args.request)
-
-    print(request_arguments)
-
-
-#     with requests.request(**args) as r:
-#         return r
+def _do_request(request):
+    with requests.request(**request) as r:
+        return r
 
 
 def main():
@@ -111,10 +109,13 @@ def main():
     global logger
     logger = logger_wrapper.get(__name__)
 
-    response = _do_request(args)
+    request = _get_request_arguments(args.request_name)
 
-    # print(response.json())
-    # print(response.headers)
+    if args.dry_run:
+        print(json.dumps(request))
+        return
+
+    response = _do_request(request)
 
 
 if __name__ == '__main__':
