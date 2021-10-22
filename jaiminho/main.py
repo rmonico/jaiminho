@@ -6,6 +6,7 @@ import logger_wrapper
 import requests
 import yaml
 import os
+import json
 
 HOME_FOLDER_VARIABLE = 'JAIMINHO'
 DEFAULT_HOME_FOLDER = '{HOME}/.config/jaiminho'.format(**os.environ)
@@ -97,6 +98,23 @@ def _do_request(request):
         return r
 
 
+def persist(request_name, request, response):
+    from tinydb import TinyDB, Query
+
+    registry = {
+        'timestamp': None,
+        'request_name': request_name,
+        'request': request,
+        'response': response,
+    }
+
+    database_file_name = os.path.join(args.home_folder, 'history.db')
+
+    db = TinyDB(database_file_name)
+
+    db.insert(registry)
+
+
 def main():
     global args
 
@@ -116,6 +134,8 @@ def main():
         return
 
     response = _do_request(request)
+
+    persist(args.request_name, request, response)
 
 
 if __name__ == '__main__':
