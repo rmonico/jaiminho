@@ -7,9 +7,6 @@ import requests
 import yaml
 import os
 
-# Disable breakpoints
-# breakpoint = lambda: False
-
 HOME_FOLDER_VARIABLE = 'JAIMINHO'
 DEFAULT_HOME_FOLDER = '{HOME}/.config/jaiminho'.format(**os.environ)
 REQUEST_NAMESPACE_SEPARATOR = '/'
@@ -56,7 +53,6 @@ def _namespace(request_name):
 
 
 def _get_request_arguments(request_name):
-    breakpoint()
     arguments = list()
     with open(_request_file(request_name)) as f:
         arguments.append(yaml.safe_load(f))
@@ -115,7 +111,6 @@ def main():
     global logger
     logger = logger_wrapper.get(__name__)
 
-    # breakpoint()
     response = _do_request(args)
 
     # print(response.json())
