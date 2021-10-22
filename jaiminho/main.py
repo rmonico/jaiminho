@@ -4,6 +4,10 @@
 import argparse
 import logger_wrapper
 import requests
+# Disable warning due to certificate
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 import yaml
 import os
 import json
