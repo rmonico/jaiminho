@@ -103,16 +103,18 @@ def _do_request(request):
 
 
 def persist(request_name, request, response):
-    from tinydb import TinyDB, Query
+    from datetime import datetime
 
     registry = {
-        'timestamp': None,
+        'timestamp': datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
         'request_name': request_name,
         'request': request,
         'response': response,
     }
 
     database_file_name = os.path.join(args.home_folder, 'history.db')
+
+    from tinydb import TinyDB, Query
 
     db = TinyDB(database_file_name)
 
