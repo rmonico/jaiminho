@@ -98,8 +98,27 @@ def _make_extensions(arguments):
 
 
 def _do_request(request):
-    with requests.request(**request) as r:
-        return r
+    with requests.request(**request) as response:
+        _response = {
+            'apparent_encoding': response.apparent_encoding,
+            'content': response.json(),
+            # TODO 'cookies': response.cookies,
+            'elapsed': str(response.elapsed),
+            'encoding': response.encoding,
+            'headers': dict(response.headers),
+            'history': response.history,
+            'is_permanent_redirect': response.is_permanent_redirect,
+            'is_redirect': response.is_redirect,
+            'links': response.links,
+            'next': response.next,
+            'ok': response.ok,
+            # TODO Ver se tem alguma coisa relevante aqui 'raw': response.raw,
+            'reason': response.reason,
+            'status_code': response.status_code,
+            'url': response.url,
+        }
+
+        return _response
 
 
 def persist(request_name, request, response):
@@ -140,6 +159,16 @@ def main():
         return
 
     response = _do_request(request)
+
+    print_response = {}
+
+    print_response['status'] = response['status_code']
+    if not response['ok']:
+        print_response['headers'] = dict(response['headers'])
+
+    print_response['body'] = response['content']
+
+    print(json.dumps(print_response))
 
     persist(args.request_name, request, response)
 
