@@ -5,3 +5,4 @@
 [description:"Requests folder parameter" entry:"1634234749" modified:"1634234749" status:"pending" uuid:"dd6ff0c0-7b78-480c-a5c3-3799720ef1ed"]
 [description:"Define better how parameters and extension will work" entry:"1634235446" modified:"1634235446" status:"pending" uuid:"31575921-d652-4b82-81df-b4f5e3c42c1b"]
 [description:"Change argparse parameters accordingly parameters in URL" entry:"1634764393" modified:"1634764393" status:"pending" uuid:"081d1191-5203-4617-9644-868fd623b848"]
+[description:"Choose which fields of response will be printed" entry:"1634925614" modified:"1634925614" status:"pending" uuid:"a1f63463-aee3-472d-8ec6-2dbce7d9a73a"]
