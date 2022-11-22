@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-from unittest import SkipTest, TestCase
+from unittest import SkipTest, TestCase, main as unittest_main
 from argparse import Namespace
-import main
+from jaiminho import main
 
 
 class JaiminhoTests(TestCase):
@@ -59,5 +59,4 @@ class JaiminhoTests(TestCase):
 
 
 if __name__ == '__main__':
-    import unittest
-    unittest.main()
+    unittest_main()
