@@ -1,7 +1,0 @@
-__self__:
-    abstract: True
-url: {{protocol}}://{{host}}/{{path}}
-path:
-    __self__:
-        append: True
-

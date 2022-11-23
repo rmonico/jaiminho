@@ -1,0 +1,9 @@
+method: GET
+headers:
+  - Authorization: {{token}}
+protocol: http
+host: api-jornada.casasbahia.net
+context: vv-catalogo
+path: catalogo
+params:
+  - q: {{sku}}
