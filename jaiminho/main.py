@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import argparse
+from argparse import Namespace
 import logger_wrapper
 import requests
 # Disable warning due to certificate
@@ -18,6 +19,42 @@ REQUEST_NAMESPACE_SEPARATOR = '/'
 NAMESPACE_DEFAULT_REQUEST = '__default__'
 
 
+def main():
+    global args
+
+    args = _parse_command_line()
+
+    logger_wrapper.configure(args.verbosity)
+    '''
+    Logger reference: https://docs.python.org/3/library/logging.html
+    '''
+    global logger
+    logger = logger_wrapper.get(__name__)
+
+    raw_data = _get_raw_request_data(args.request_name)
+
+    request = _build_request(raw_data)
+
+    response = _do_request(request)
+
+    print_response = {}
+
+    print_response['status'] = response['status_code']
+    if not response['ok']:
+        print_response['headers'] = dict(response['headers'])
+
+    print_response['body'] = response['content']
+
+    import sys
+    from pygments import highlight, lexers, formatters
+
+    formatted_json = json.dumps(print_response, ensure_ascii=False, indent=2)
+
+    colorful_json = highlight(formatted_json, lexers.JsonLexer(), formatters.TerminalTrueColorFormatter())
+
+    print(colorful_json)
+
+
 def _parse_command_line():
     '''
     Reference: https://docs.python.org/3/library/argparse.html
@@ -30,9 +67,6 @@ def _parse_command_line():
                                                DEFAULT_HOME_FOLDER),
                         help='Set alternate home folder')
 
-    parser.add_argument('--dry-run',
-                        help='Show arguments being used, actually do nothing')
-
     parser.add_argument('request_name', help='Request name')
 
     logger_wrapper.make_verbosity_argument(parser)
@@ -40,10 +74,9 @@ def _parse_command_line():
     return parser.parse_args()
 
 
-def _error(message, exit_code=1):
-    global logger
-    logger.critical(message)
-    sys.exit(exit_code)
+def _get_raw_request_data(request_name):
+    with open(_request_file(request_name)) as f:
+        return yaml.safe_load(f)
 
 
 def _request_file(request_name):
@@ -51,55 +84,50 @@ def _request_file(request_name):
     return os.path.join(args.home_folder, request_name + '.yaml')
 
 
-def _namespace(request_name):
-    last_separator = request_name.rfind(REQUEST_NAMESPACE_SEPARATOR)
+def _build_request(data: dict):
+    request = dict(data['request'])
 
-    if last_separator > -1:
-        return request_name[:last_separator]
-    else:
-        return None
+    namespace_data = _convert_dicts_to_namespace(data)
 
+    request = _format_all_strs_on_dict(namespace_data, request)
 
-def _get_request_arguments(request_name):
-    arguments = list()
-    with open(_request_file(request_name)) as f:
-        arguments.append(yaml.safe_load(f))
-
-    namespace = request_name
-    while namespace := _namespace(namespace):
-        namespace_default = namespace + REQUEST_NAMESPACE_SEPARATOR + NAMESPACE_DEFAULT_REQUEST
-        with open(_request_file(namespace_default)) as f:
-            arguments.append(yaml.safe_load(f))
-
-    arguments.reverse()
-
-    definitive = _make_extensions(arguments)
-
-    return definitive
+    return request
 
 
-def _make_extension(subargs, superargs):
-    for key, value in superargs.items():
-        if key not in subargs:
-            subargs[key] = value
-        elif isinstance(value, dict):
-            _make_extension(subargs[key], value)
-        else:
-            subargs[key] = value
+def _convert_dicts_to_namespace(d: dict) -> Namespace:
+    for key, value in d.items():
+        if type(value) == dict:
+            d[key] = Namespace(**_convert_dicts_to_namespace(value))
+
+    return d
 
 
-def _make_extensions(arguments):
-    subargs = dict()
+def _format_all_strs_on_dict(variables: dict, d: dict) -> dict:
+    for key, value in d.items():
+        formatted = _format_all_strs(variables, value)
 
-    for superargs in arguments:
-        _make_extension(subargs, superargs)
+        if formatted != value:
+            d[key] = formatted
 
-    return subargs
+    return d
+
+
+def _format_all_strs(variables: dict, obj: object) -> dict:
+    if type(obj) == dict:
+        return _format_all_strs_on_dict(variables, obj)
+
+    elif type(obj) == list:
+        return [ _format_all_strs(variables, item) for item in obj ]
+
+    if type(obj) == str:
+        return obj.format(**variables)
+
+    return obj
 
 
 def _do_request(request):
     with requests.request(**request) as response:
-        _response = {
+        return {
             'apparent_encoding': response.apparent_encoding,
             'content': response.json(),
             # TODO 'cookies': response.cookies,
@@ -117,60 +145,6 @@ def _do_request(request):
             'status_code': response.status_code,
             'url': response.url,
         }
-
-        return _response
-
-
-def persist(request_name, request, response):
-    from datetime import datetime
-
-    registry = {
-        'timestamp': datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
-        'request_name': request_name,
-        'request': request,
-        'response': response,
-    }
-
-    database_file_name = os.path.join(args.home_folder, 'history.db')
-
-    from tinydb import TinyDB, Query
-
-    db = TinyDB(database_file_name)
-
-    db.insert(registry)
-
-
-def main():
-    global args
-
-    args = _parse_command_line()
-
-    logger_wrapper.configure(args.verbosity)
-    '''
-    Logger reference: https://docs.python.org/3/library/logging.html
-    '''
-    global logger
-    logger = logger_wrapper.get(__name__)
-
-    request = _get_request_arguments(args.request_name)
-
-    if args.dry_run:
-        print(json.dumps(request))
-        return
-
-    response = _do_request(request)
-
-    print_response = {}
-
-    print_response['status'] = response['status_code']
-    if not response['ok']:
-        print_response['headers'] = dict(response['headers'])
-
-    print_response['body'] = response['content']
-
-    print(json.dumps(print_response))
-
-    persist(args.request_name, request, response)
 
 
 if __name__ == '__main__':
