@@ -6,7 +6,7 @@ from jaiminho import main
 
 class JaiminhoTests(TestCase):
 
-    def test_request_file(self):
+    def test_GIVEN_a_home_folder_on_cli_THEN_must_find_request_files_on_it(self):
         main.args = Namespace(home_folder='/home/folder')
 
         request_file = main._request_file('ab/cd/de')
