@@ -114,9 +114,6 @@ def _format_all_strs(variables: dict, obj: object) -> dict:
     if type(obj) == dict:
         return _format_all_strs_on_dict(variables, obj)
 
-    elif type(obj) == list:
-        return [ _format_all_strs(variables, item) for item in obj ]
-
     if type(obj) == str:
         return obj.format(**variables)
 
