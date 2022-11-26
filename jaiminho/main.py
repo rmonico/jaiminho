@@ -15,8 +15,6 @@ import json
 
 HOME_FOLDER_VARIABLE = 'JAIMINHO'
 DEFAULT_HOME_FOLDER = '{HOME}/.config/jaiminho'.format(**os.environ)
-REQUEST_NAMESPACE_SEPARATOR = '/'
-NAMESPACE_DEFAULT_REQUEST = '__default__'
 
 
 def main():
