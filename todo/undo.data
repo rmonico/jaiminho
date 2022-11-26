@@ -26,3 +26,35 @@ new [description:"Change argparse parameters accordingly parameters in URL" entr
 time 1634925614
 new [description:"Choose which fields of response will be printed" entry:"1634925614" modified:"1634925614" status:"pending" uuid:"a1f63463-aee3-472d-8ec6-2dbce7d9a73a"]
 ---
+time 1669435685
+old [description:"External file extension" entry:"1634230888" modified:"1634230974" status:"pending" uuid:"a833f66e-60aa-4c9a-9e5b-e42fc0c5ef44"]
+new [annotation_1669435683:"Will not do done anymore" description:"External file extension" end:"1669435683" entry:"1634230888" modified:"1669435685" status:"deleted" uuid:"a833f66e-60aa-4c9a-9e5b-e42fc0c5ef44"]
+---
+time 1669435685
+old [description:"Remove __ entries" entry:"1634231039" modified:"1634231039" status:"pending" uuid:"f9af0ec3-a445-4282-ba07-a01571745c2d"]
+new [annotation_1669435685:"Will not do done anymore" description:"Remove __ entries" end:"1669435685" entry:"1634231039" modified:"1669435685" status:"deleted" uuid:"f9af0ec3-a445-4282-ba07-a01571745c2d"]
+---
+time 1669435685
+old [description:"Apply __format__" entry:"1634231090" modified:"1634231090" status:"pending" uuid:"da627f54-7709-4517-9014-4dfd24c64766"]
+new [annotation_1669435685:"Will not do done anymore" description:"Apply __format__" end:"1669435685" entry:"1634231090" modified:"1669435685" status:"deleted" uuid:"da627f54-7709-4517-9014-4dfd24c64766"]
+---
+time 1669435685
+old [description:"Requests folder parameter" entry:"1634234749" modified:"1634234749" status:"pending" uuid:"dd6ff0c0-7b78-480c-a5c3-3799720ef1ed"]
+new [annotation_1669435685:"Will not do done anymore" description:"Requests folder parameter" end:"1669435685" entry:"1634234749" modified:"1669435685" status:"deleted" uuid:"dd6ff0c0-7b78-480c-a5c3-3799720ef1ed"]
+---
+time 1669435685
+old [description:"Define better how parameters and extension will work" entry:"1634235446" modified:"1634235446" status:"pending" uuid:"31575921-d652-4b82-81df-b4f5e3c42c1b"]
+new [annotation_1669435685:"Will not do done anymore" description:"Define better how parameters and extension will work" end:"1669435685" entry:"1634235446" modified:"1669435685" status:"deleted" uuid:"31575921-d652-4b82-81df-b4f5e3c42c1b"]
+---
+time 1669435685
+old [description:"Change argparse parameters accordingly parameters in URL" entry:"1634764393" modified:"1634764393" status:"pending" uuid:"081d1191-5203-4617-9644-868fd623b848"]
+new [annotation_1669435685:"Will not do done anymore" description:"Change argparse parameters accordingly parameters in URL" end:"1669435685" entry:"1634764393" modified:"1669435685" status:"deleted" uuid:"081d1191-5203-4617-9644-868fd623b848"]
+---
+time 1669435685
+old [description:"Choose which fields of response will be printed" entry:"1634925614" modified:"1634925614" status:"pending" uuid:"a1f63463-aee3-472d-8ec6-2dbce7d9a73a"]
+new [annotation_1669435685:"Will not do done anymore" description:"Choose which fields of response will be printed" end:"1669435685" entry:"1634925614" modified:"1669435685" status:"deleted" uuid:"a1f63463-aee3-472d-8ec6-2dbce7d9a73a"]
+---
+time 1669435689
+old [description:"Variable expansion" entry:"1634230965" modified:"1634230965" status:"pending" uuid:"417dbb01-d43b-4868-beff-e8c91eeae945"]
+new [description:"Variable expansion" end:"1669435689" entry:"1634230965" modified:"1669435689" status:"completed" uuid:"417dbb01-d43b-4868-beff-e8c91eeae945"]
+---
