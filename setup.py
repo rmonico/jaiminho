@@ -9,7 +9,7 @@ setup(name='jaiminho',
       license='GPL3',
       packages=['jaiminho'],
       entry_points={
-          'console_scripts': ['jai=jaiminho.main:main'],
+          'console_scripts': ['jai=jaiminho.__main__:main'],
       },
       zip_safe=False)
 
