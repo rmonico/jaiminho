@@ -7,7 +7,7 @@ setup(name='jaiminho',
       author='Rafael Monico',
       author_email='rmonico1@gmail.com',
       license='GPL3',
-      packages=['jaiminho'],
+      packages=['jaiminho', 'jaiminho.commands'],
       entry_points={
           'console_scripts': ['jai=jaiminho.__main__:main'],
       },
