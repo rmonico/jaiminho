@@ -48,10 +48,11 @@ def _parse_command_line():
 
     subparsers = parser.add_subparsers()
 
-    add_parser = subparsers.add_parser('call', aliases='c', help='Make a request')
-    add_parser.set_defaults(command = call_command)
+    call_parser = subparsers.add_parser('call', aliases='c', help='Make a request')
+    call_parser.set_defaults(command = call_command)
 
-    add_parser.add_argument('request_name', help='Request name')
+    call_parser.add_argument('request_name', help='Request name')
+    call_parser.add_argument('--environment', '-e', default='', help='Request name')
 
 
     list_parser = subparsers.add_parser('list', aliases = ['ls', 'l'] , help='List existing requests')
