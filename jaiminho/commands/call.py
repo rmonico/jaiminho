@@ -3,11 +3,14 @@ import yaml
 from argparse import Namespace
 import requests
 import json
+from .commons import request_file, environment_file
 
 
 def run(args_):
     global args
     args = args_
+
+    env_name, environment = _load_environment(args.environment, args.request_name)
 
     raw_data = _get_raw_request_data(args.request_name)
 
@@ -33,14 +36,41 @@ def run(args_):
     print(colorful_json)
 
 
-def _get_raw_request_data(request_name):
-        with open(_request_file(request_name)) as f:
-                    return yaml.safe_load(f)
+def _load_environment(environment_name, request_name):
+    concrete = dict()
+
+    folders = request_name.split('/')
+    for i in range(len(folders)-1):
+        abstract = _get_raw_environment_data(folders[:i+1])
+
+        if environment_name == '':
+            environment_name = abstract.get('selected', '')
+
+        concrete.update(_get_environment(abstract, environment_name))
+
+    return environment_name, concrete
 
 
-def _request_file(request_name):
+def _get_raw_environment_data(folders):
     global args
-    return os.path.join(args.home_folder, request_name + '.yaml')
+
+    with open(environment_file(args, folders)) as f:
+        return yaml.safe_load(f)
+
+
+def _get_environment(raw, name):
+    for environment in raw.get('environments', []):
+        if environment.get('name', '') == name:
+            return environment
+
+    return {}
+
+
+def _get_raw_request_data(request_name):
+    global args
+
+    with open(request_file(args, request_name)) as f:
+        return yaml.safe_load(f)
 
 
 def _build_request(data: dict):
