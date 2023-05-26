@@ -10,11 +10,11 @@ def run(args_):
     global args
     args = args_
 
-    env_name, environment = _load_environment(args.environment, args.request_name)
+    environment = _load_environment(args.environment, args.request_name)
 
     raw_data = _get_raw_request_data(args.request_name)
 
-    request = _build_request(raw_data)
+    request = _build_request(raw_data, environment)
 
     response = _do_request(request)
 
@@ -48,7 +48,7 @@ def _load_environment(environment_name, request_name):
 
         concrete.update(_get_environment(abstract, environment_name))
 
-    return environment_name, concrete
+    return concrete
 
 
 def _get_raw_environment_data(folders):
@@ -73,27 +73,17 @@ def _get_raw_request_data(request_name):
         return yaml.safe_load(f)
 
 
-def _build_request(data: dict):
+def _build_request(data: dict, environment: dict) -> dict:
     request = dict(data['request'])
 
-    namespace_data = _convert_dicts_to_namespace(data)
-
-    request = _format_all_strs_on_dict(namespace_data, request)
+    request = _format_all_strs_on_dict(environment, request)
 
     return request
 
 
-def _convert_dicts_to_namespace(d: dict) -> Namespace:
+def _format_all_strs_on_dict(environment: dict, d: dict) -> dict:
     for key, value in d.items():
-        if type(value) == dict:
-            d[key] = Namespace(**_convert_dicts_to_namespace(value))
-
-    return d
-
-
-def _format_all_strs_on_dict(variables: dict, d: dict) -> dict:
-    for key, value in d.items():
-        formatted = _format_all_strs(variables, value)
+        formatted = _format_all_strs(environment, value)
 
         if formatted != value:
             d[key] = formatted
@@ -101,15 +91,20 @@ def _format_all_strs_on_dict(variables: dict, d: dict) -> dict:
     return d
 
 
-def _format_all_strs(variables: dict, obj: object) -> dict:
+def _format_all_strs(environment: dict, obj: object) -> dict:
     if type(obj) == dict:
-        return _format_all_strs_on_dict(variables, obj)
+        return _format_all_strs_on_dict(environment, obj)
 
     if type(obj) == str:
-        return obj.format(**variables)
+        # FIXME Cant be this way, use another form of metadata
+        if obj.startswith('@'):
+            file_path = os.path.join(args.home_folder, obj[1:])
+            with open(file_path) as f:
+                return '\n'.join(f.readlines()).encode().strip()
+        else:
+            return obj.format(**environment)
 
     return obj
-
 
 def _do_request(request):
     with requests.request(**request) as response:
