@@ -9,7 +9,7 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 import yaml
 import os
-import system
+import sys
 
 from .commands import list as list_command, call as call_command, edit as edit_command, new as new_command
 
@@ -80,5 +80,5 @@ def _parse_command_line():
 if __name__ == '__main__':
     result = main()
 
-    system.exit(result)
+    sys.exit(result)
 
