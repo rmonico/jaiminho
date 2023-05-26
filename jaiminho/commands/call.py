@@ -108,9 +108,14 @@ def _format_all_strs(environment: dict, obj: object) -> dict:
 
 def _do_request(request):
     with requests.request(**request) as response:
+        try:
+            content = response.json()
+        except requests.exceptions.JSONDecodeError:
+            content = response.text
+
         return {
             'apparent_encoding': response.apparent_encoding,
-            'content': response.json(),
+            'content': content,
             # TODO 'cookies': response.cookies,
             'elapsed': str(response.elapsed),
             'encoding': response.encoding,
