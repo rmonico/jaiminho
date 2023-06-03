@@ -35,6 +35,9 @@ def run(args_):
 
     print(colorful_json)
 
+    if response['status_code']:
+        run_on_2xx_rules(raw_data, response['content'])
+
 
 def _load_environment(environment_name, request_name):
     concrete = dict()
@@ -131,4 +134,21 @@ def _do_request(request):
             'status_code': response.status_code,
             'url': response.url,
         }
+
+
+def run_on_2xx_rules(raw_data, response):
+    if 'on 2xx' not in raw_data:
+        return
+
+    if 'save' not in raw_data['on 2xx']:
+        return
+
+    save_data = raw_data['on 2xx']['save']
+    filename = save_data['on_file']
+    response_key = save_data['json_key']
+
+    value = response[response_key]
+
+    with open(filename, 'w') as f:
+        f.write(value)
 
