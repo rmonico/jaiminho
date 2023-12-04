@@ -101,7 +101,7 @@ def _format_all_strs(environment: dict, obj: object) -> dict:
     if type(obj) == str:
         # FIXME Cant be this way, use another form of metadata
         if obj.startswith('@'):
-            file_path = os.path.join(args.home_folder, obj[1:])
+            file_path = os.path.join(args.home_folder, obj[1:] + '.data')
             with open(file_path) as f:
                 return '\n'.join(f.readlines()).strip()
         else:
@@ -144,11 +144,12 @@ def run_on_2xx_rules(raw_data, response):
         return
 
     save_data = raw_data['on 2xx']['save']
-    filename = save_data['on_file']
+    filename = save_data['on_file'] + '.data'
+    filepath = os.path.join(args.home_folder, filename)
     response_key = save_data['json_key']
 
     value = response[response_key]
 
-    with open(filename, 'w') as f:
+    with open(filepath, 'w') as f:
         f.write(value)
 
