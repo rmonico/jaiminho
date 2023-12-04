@@ -43,8 +43,8 @@ def _load_environment(environment_name, request_name):
     concrete = dict()
 
     folders = request_name.split('/')
-    for i in range(len(folders)-1):
-        abstract = _get_raw_environment_data(folders[:i+1])
+    for i in range(len(folders)):
+        abstract = _get_raw_environment_data(folders[:i])
 
         if environment_name == '':
             environment_name = abstract.get('selected', '')
