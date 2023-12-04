@@ -25,3 +25,4 @@
 {"description":"Swagger import","entry":"20221126T042921Z","modified":"20221126T042921Z","status":"pending","uuid":"1f94ddcb-f83a-437b-b801-38bea7ebda38"}
 {"description":"Save all history.monthly to a TinyDB or SQLite","entry":"20221126T042934Z","modified":"20221126T042934Z","status":"pending","uuid":"1bda7bf7-387d-4ab5-ab6f-b95682a2309e"}
 {"description":"Save all history to a TinyDB or SQLite","entry":"20221126T042934Z","modified":"20221126T050537Z","status":"pending","uuid":"1bda7bf7-387d-4ab5-ab6f-b95682a2309e"}
+{"description":"Command to generate equivalent curl","entry":"20231204T202535Z","modified":"20231204T202535Z","status":"pending","uuid":"19e7791e-29b4-4c31-8dbf-31f549999b66"}
