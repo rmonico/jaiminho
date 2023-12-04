@@ -103,7 +103,7 @@ def _format_all_strs(environment: dict, obj: object) -> dict:
         if obj.startswith('@'):
             file_path = os.path.join(args.home_folder, obj[1:])
             with open(file_path) as f:
-                return '\n'.join(f.readlines()).encode().strip()
+                return '\n'.join(f.readlines()).strip()
         else:
             return obj.format(**environment)
 
