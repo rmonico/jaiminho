@@ -4,6 +4,10 @@ from argparse import Namespace
 import requests
 import json
 from .commons import request_file, environment_file
+import logger_wrapper
+
+
+logger = logger_wrapper.get(__name__)
 
 
 def run(args_):
@@ -115,6 +119,8 @@ def _format_all_strs(environment: dict, obj: object) -> dict:
     return obj
 
 def _do_request(request):
+    logger.debug('Requesting: ' + str(request))
+
     with requests.request(**request) as response:
         try:
             content = response.json()
