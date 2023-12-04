@@ -57,7 +57,12 @@ def _load_environment(environment_name, request_name):
 def _get_raw_environment_data(folders):
     global args
 
-    with open(environment_file(args, folders)) as f:
+    environmentFile = environment_file(args, folders)
+
+    if not os.path.exists(environmentFile):
+        return {}
+
+    with open(environmentFile) as f:
         return yaml.safe_load(f)
 
 
