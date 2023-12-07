@@ -94,3 +94,6 @@ new [description:"Save all history to a TinyDB or SQLite" entry:"1669436974" mod
 time 1701721535
 new [description:"Command to generate equivalent curl" entry:"1701721535" modified:"1701721535" status:"pending" uuid:"19e7791e-29b4-4c31-8dbf-31f549999b66"]
 ---
+time 1701969612
+new [description:"Save token by environment" entry:"1701969612" modified:"1701969612" status:"pending" uuid:"975118eb-f469-40de-8fcf-4be5037b1b9a"]
+---
