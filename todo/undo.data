@@ -97,3 +97,6 @@ new [description:"Command to generate equivalent curl" entry:"1701721535" modifi
 time 1701969612
 new [description:"Save token by environment" entry:"1701969612" modified:"1701969612" status:"pending" uuid:"975118eb-f469-40de-8fcf-4be5037b1b9a"]
 ---
+time 1702320818
+new [description:"List command: show http verb before request name" entry:"1702320818" modified:"1702320818" status:"pending" uuid:"9bf13bd1-f64a-4741-94e3-78ecf243ace0"]
+---

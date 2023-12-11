@@ -27,3 +27,4 @@
 {"description":"Save all history to a TinyDB or SQLite","entry":"20221126T042934Z","modified":"20221126T050537Z","status":"pending","uuid":"1bda7bf7-387d-4ab5-ab6f-b95682a2309e"}
 {"description":"Command to generate equivalent curl","entry":"20231204T202535Z","modified":"20231204T202535Z","status":"pending","uuid":"19e7791e-29b4-4c31-8dbf-31f549999b66"}
 {"description":"Save token by environment","entry":"20231207T172012Z","modified":"20231207T172012Z","status":"pending","uuid":"975118eb-f469-40de-8fcf-4be5037b1b9a"}
+{"description":"List command: show http verb before request name","entry":"20231211T185338Z","modified":"20231211T185338Z","status":"pending","uuid":"9bf13bd1-f64a-4741-94e3-78ecf243ace0"}
