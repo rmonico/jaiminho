@@ -109,3 +109,6 @@ new [description:"Find a solution to store passwords" entry:"1703265549" modifie
 time 1703266748
 new [description:"Environment files: allow a \"global\" entry with environment-independent variables" entry:"1703266748" modified:"1703266748" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"784d2dc2-695c-4215-a123-981b32b52e85"]
 ---
+time 1703267487
+new [description:"Info command, show environment and usefull stuff" entry:"1703267487" modified:"1703267487" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"02169206-dbd6-4bc7-a303-29aaf8731b32"]
+---

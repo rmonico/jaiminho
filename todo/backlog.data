@@ -31,3 +31,4 @@
 {"description":"Call command: rename to request","entry":"20231219T181038Z","modified":"20231219T181038Z","status":"pending","uuid":"abba887a-bcba-4e3b-a7b5-a8f0c8c7d1cb","tags":["improvement"]}
 {"description":"Find a solution to store passwords","entry":"20231222T171909Z","modified":"20231222T171909Z","status":"pending","uuid":"500e271e-ca05-4112-a4fa-4536cefcaa86"}
 {"description":"Environment files: allow a \"global\" entry with environment-independent variables","entry":"20231222T173908Z","modified":"20231222T173908Z","status":"pending","uuid":"784d2dc2-695c-4215-a123-981b32b52e85","tags":["improvement"]}
+{"description":"Info command, show environment and usefull stuff","entry":"20231222T175127Z","modified":"20231222T175127Z","status":"pending","uuid":"02169206-dbd6-4bc7-a303-29aaf8731b32","tags":["improvement"]}
