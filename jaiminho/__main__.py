@@ -48,7 +48,7 @@ def _parse_command_line():
 
     subparsers = parser.add_subparsers()
 
-    call_parser = subparsers.add_parser('call', aliases='c', help='Make a request')
+    call_parser = subparsers.add_parser('request', aliases='r', help='Make a request')
     call_parser.set_defaults(command = call_command)
 
     call_parser.add_argument('request_name', help='Request name')

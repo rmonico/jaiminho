@@ -55,6 +55,7 @@ def _load_environment(environment_name, request_name):
 
         concrete.update(_get_environment(abstract, environment_name))
 
+    # FIXME This should only load external files, not inject environment into itself
     return _format_all_strs_on_dict(concrete, dict(concrete))
 
 
@@ -94,7 +95,7 @@ def _build_request(data: dict, environment: dict) -> dict:
 
 
 def _format_all_strs_on_dict(environment: dict, d: dict) -> dict:
-    for key, value in d.items():
+    for key, value in dict(d).items():
         formatted = _format_all_strs(environment, value)
 
         if formatted != value:
@@ -108,7 +109,8 @@ def _format_all_strs(environment: dict, obj: object) -> dict:
         return _format_all_strs_on_dict(environment, obj)
 
     if type(obj) == str:
-        # FIXME Cant be this way, use another form of metadata
+        # FIXME Cant be with @ at beginning, use regex: \{file:[a-z0-9\-_/]\}
+        # FIXME This must be done BEFORE any other interpolation, split this phase
         if obj.startswith('@'):
             file_path = os.path.join(args.home_folder, obj[1:] + '.data')
             with open(file_path) as f:
