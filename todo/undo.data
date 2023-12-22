@@ -106,3 +106,6 @@ new [description:"Call command: rename to request" entry:"1703009438" modified:"
 time 1703265549
 new [description:"Find a solution to store passwords" entry:"1703265549" modified:"1703265549" status:"pending" uuid:"500e271e-ca05-4112-a4fa-4536cefcaa86"]
 ---
+time 1703266748
+new [description:"Environment files: allow a \"global\" entry with environment-independent variables" entry:"1703266748" modified:"1703266748" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"784d2dc2-695c-4215-a123-981b32b52e85"]
+---
