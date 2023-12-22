@@ -55,7 +55,7 @@ def _load_environment(environment_name, request_name):
 
         concrete.update(_get_environment(abstract, environment_name))
 
-    return concrete
+    return _format_all_strs_on_dict(concrete, dict(concrete))
 
 
 def _get_raw_environment_data(folders):
