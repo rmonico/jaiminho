@@ -29,3 +29,4 @@
 {"description":"Save token by environment","entry":"20231207T172012Z","modified":"20231207T172012Z","status":"pending","uuid":"975118eb-f469-40de-8fcf-4be5037b1b9a"}
 {"description":"List command: show http verb before request name","entry":"20231211T185338Z","modified":"20231211T185338Z","status":"pending","uuid":"9bf13bd1-f64a-4741-94e3-78ecf243ace0"}
 {"description":"Call command: rename to request","entry":"20231219T181038Z","modified":"20231219T181038Z","status":"pending","uuid":"abba887a-bcba-4e3b-a7b5-a8f0c8c7d1cb","tags":["improvement"]}
+{"description":"Find a solution to store passwords","entry":"20231222T171909Z","modified":"20231222T171909Z","status":"pending","uuid":"500e271e-ca05-4112-a4fa-4536cefcaa86"}

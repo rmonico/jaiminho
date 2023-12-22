@@ -103,3 +103,6 @@ new [description:"List command: show http verb before request name" entry:"17023
 time 1703009438
 new [description:"Call command: rename to request" entry:"1703009438" modified:"1703009438" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"abba887a-bcba-4e3b-a7b5-a8f0c8c7d1cb"]
 ---
+time 1703265549
+new [description:"Find a solution to store passwords" entry:"1703265549" modified:"1703265549" status:"pending" uuid:"500e271e-ca05-4112-a4fa-4536cefcaa86"]
+---
