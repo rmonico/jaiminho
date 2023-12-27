@@ -127,3 +127,6 @@ new [annotation_1703270204:"Show active environment, variable values, requests, 
 time 1703698836
 new [description:"New command: rename a request" entry:"1703698836" modified:"1703698836" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"68f6a3a2-25dd-464f-ab04-a02db19e103e"]
 ---
+time 1703703382
+new [description:"New command: view request" entry:"1703703382" modified:"1703703382" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"026da31f-0f35-4b77-85a7-28d9b366b6e5"]
+---

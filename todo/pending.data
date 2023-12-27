@@ -15,3 +15,4 @@
 [description:"New command: clone a request with another name" entry:"1703270176" modified:"1703270176" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"e1cb0eab-99e6-4287-8749-030310fdb638"]
 [annotation_1703270204:"Show active environment, variable values, requests, etc" description:"New command: info command" entry:"1703270187" modified:"1703270204" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"524c4a0a-4146-4c1c-b624-9c5f7e886275"]
 [description:"New command: rename a request" entry:"1703698836" modified:"1703698836" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"68f6a3a2-25dd-464f-ab04-a02db19e103e"]
+[description:"New command: view request" entry:"1703703382" modified:"1703703382" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"026da31f-0f35-4b77-85a7-28d9b366b6e5"]
