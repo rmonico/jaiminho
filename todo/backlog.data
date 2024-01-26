@@ -37,6 +37,4 @@
 {"description":"New command: info command","entry":"20231222T183627Z","modified":"20231222T183644Z","status":"pending","uuid":"524c4a0a-4146-4c1c-b624-9c5f7e886275","annotations":[{"entry":"20231222T183644Z","description":"Show active environment, variable values, requests, etc"}],"tags":["improvement"]}
 {"description":"New command: rename a request","entry":"20231227T174036Z","modified":"20231227T174036Z","status":"pending","uuid":"68f6a3a2-25dd-464f-ab04-a02db19e103e","tags":["improvement"]}
 {"description":"New command: view request","entry":"20231227T185622Z","modified":"20231227T185622Z","status":"pending","uuid":"026da31f-0f35-4b77-85a7-28d9b366b6e5","tags":["improvement"]}
-{"description":"New command: clone a request with another name","entry":"20231222T183616Z","modified":"20231222T183616Z","status":"pending","uuid":"e1cb0eab-99e6-4287-8749-030310fdb638","tags":["improvement"]}
-{"description":"New command: info command","entry":"20231222T183627Z","modified":"20231222T183627Z","status":"pending","uuid":"524c4a0a-4146-4c1c-b624-9c5f7e886275","tags":["improvement"]}
-{"description":"New command: info command","entry":"20231222T183627Z","modified":"20231222T183644Z","status":"pending","uuid":"524c4a0a-4146-4c1c-b624-9c5f7e886275","annotations":[{"entry":"20231222T183644Z","description":"Show active environment, variable values, requests, etc"}],"tags":["improvement"]}
+{"description":"List command: show as tree","entry":"20240126T193022Z","modified":"20240126T193022Z","status":"pending","uuid":"2587142f-0a33-4780-b6e5-e5b69082f9ca"}

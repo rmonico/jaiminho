@@ -127,3 +127,6 @@ new [description:"New command: rename a request" entry:"1703698836" modified:"17
 time 1703703382
 new [description:"New command: view request" entry:"1703703382" modified:"1703703382" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"026da31f-0f35-4b77-85a7-28d9b366b6e5"]
 ---
+time 1706297422
+new [description:"List command: show as tree" entry:"1706297422" modified:"1706297422" status:"pending" uuid:"2587142f-0a33-4780-b6e5-e5b69082f9ca"]
+---
