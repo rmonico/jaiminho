@@ -17,3 +17,4 @@
 [description:"New command: rename a request" entry:"1703698836" modified:"1703698836" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"68f6a3a2-25dd-464f-ab04-a02db19e103e"]
 [description:"New command: view request" entry:"1703703382" modified:"1703703382" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"026da31f-0f35-4b77-85a7-28d9b366b6e5"]
 [description:"List command: show as tree" entry:"1706297422" modified:"1706297422" status:"pending" uuid:"2587142f-0a33-4780-b6e5-e5b69082f9ca"]
+[description:"request command: --dry-run option" entry:"1706297589" modified:"1706297589" status:"pending" tags:"idea" tags_idea:"x" uuid:"2f3809ca-277c-4fa3-a286-81d0ddd56f6b"]

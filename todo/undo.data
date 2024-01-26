@@ -130,3 +130,6 @@ new [description:"New command: view request" entry:"1703703382" modified:"170370
 time 1706297422
 new [description:"List command: show as tree" entry:"1706297422" modified:"1706297422" status:"pending" uuid:"2587142f-0a33-4780-b6e5-e5b69082f9ca"]
 ---
+time 1706297589
+new [description:"request command: --dry-run option" entry:"1706297589" modified:"1706297589" status:"pending" tags:"idea" tags_idea:"x" uuid:"2f3809ca-277c-4fa3-a286-81d0ddd56f6b"]
+---
