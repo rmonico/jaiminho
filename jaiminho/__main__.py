@@ -66,10 +66,10 @@ def _parse_command_line():
 
 
     new_parser = subparsers.add_parser('new', aliases = ['n'] , help='Create a new request')
-    new_parser.set_defaults(command = new_command)
-
+    new_parser.add_argument('model', help='Request to use as model')
     new_parser.add_argument('name', help='New request name')
-    new_parser.add_argument('--model', '-m', help='Request to use as model')
+    new_parser.add_argument('--no-edit', '-ne', action='store_true', help='Dont edit request after create it')
+    new_parser.set_defaults(command = new_command)
 
 
     logger_wrapper.make_verbosity_argument(parser)
