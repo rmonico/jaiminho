@@ -109,10 +109,8 @@ new [description:"Find a solution to store passwords" entry:"1703265549" modifie
 time 1703266748
 new [description:"Environment files: allow a \"global\" entry with environment-independent variables" entry:"1703266748" modified:"1703266748" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"784d2dc2-695c-4215-a123-981b32b52e85"]
 ---
-<<<<<<< Updated upstream
 time 1703267487
 new [description:"Info command, show environment and usefull stuff" entry:"1703267487" modified:"1703267487" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"02169206-dbd6-4bc7-a303-29aaf8731b32"]
-=======
 time 1703270176
 new [description:"New command: clone a request with another name" entry:"1703270176" modified:"1703270176" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"e1cb0eab-99e6-4287-8749-030310fdb638"]
 ---
@@ -122,7 +120,6 @@ new [description:"New command: info command" entry:"1703270187" modified:"170327
 time 1703270204
 old [description:"New command: info command" entry:"1703270187" modified:"1703270187" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"524c4a0a-4146-4c1c-b624-9c5f7e886275"]
 new [annotation_1703270204:"Show active environment, variable values, requests, etc" description:"New command: info command" entry:"1703270187" modified:"1703270204" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"524c4a0a-4146-4c1c-b624-9c5f7e886275"]
->>>>>>> Stashed changes
 ---
 time 1703698836
 new [description:"New command: rename a request" entry:"1703698836" modified:"1703698836" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"68f6a3a2-25dd-464f-ab04-a02db19e103e"]
