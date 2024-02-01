@@ -215,3 +215,7 @@ time 1706829594
 old [description:"Change variables by command line" entry:"1669436786" modified:"1669436786" status:"pending" uuid:"68f65047-e24e-4fa9-812b-99597f96c138"]
 new [annotation_1706829594:"Duplicate" description:"Change variables by command line" end:"1706829594" entry:"1669436786" modified:"1706829594" status:"deleted" uuid:"68f65047-e24e-4fa9-812b-99597f96c138"]
 ---
+time 1706830605
+old [description:"List command: show http verb before request name" entry:"1702320818" modified:"1706829331" priority:"H" status:"pending" uuid:"9bf13bd1-f64a-4741-94e3-78ecf243ace0"]
+new [description:"List command: show http verb before request name" end:"1706830605" entry:"1702320818" modified:"1706830605" priority:"H" status:"completed" uuid:"9bf13bd1-f64a-4741-94e3-78ecf243ace0"]
+---

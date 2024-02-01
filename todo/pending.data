@@ -6,7 +6,7 @@
 [description:"Save all history to a TinyDB or SQLite" entry:"1669436974" modified:"1669439137" status:"pending" uuid:"1bda7bf7-387d-4ab5-ab6f-b95682a2309e"]
 [description:"Command to generate equivalent curl" entry:"1701721535" modified:"1706829331" priority:"H" status:"pending" uuid:"19e7791e-29b4-4c31-8dbf-31f549999b66"]
 [description:"Save token by environment" entry:"1701969612" modified:"1701969612" status:"pending" uuid:"975118eb-f469-40de-8fcf-4be5037b1b9a"]
-[description:"List command: show http verb before request name" entry:"1702320818" modified:"1706829331" priority:"H" status:"pending" uuid:"9bf13bd1-f64a-4741-94e3-78ecf243ace0"]
+[description:"List command: show http verb before request name" end:"1706830605" entry:"1702320818" modified:"1706830605" priority:"H" status:"completed" uuid:"9bf13bd1-f64a-4741-94e3-78ecf243ace0"]
 [description:"Find a solution to store passwords" entry:"1703265549" modified:"1703265549" status:"pending" uuid:"500e271e-ca05-4112-a4fa-4536cefcaa86"]
 [description:"Environment files: allow a \"global\" entry with environment-independent variables" entry:"1703266748" modified:"1706829221" status:"pending" uuid:"784d2dc2-695c-4215-a123-981b32b52e85"]
 [annotation_1703270204:"Show active environment, variable values, requests, etc" description:"New command: info command" entry:"1703270187" modified:"1706829221" status:"pending" uuid:"524c4a0a-4146-4c1c-b624-9c5f7e886275"]
