@@ -1,3 +1,4 @@
+[annotation_1706829594:"Duplicate" description:"Change variables by command line" end:"1706829594" entry:"1669436786" modified:"1706829594" status:"deleted" uuid:"68f65047-e24e-4fa9-812b-99597f96c138"]
 [description:"New command: clone a request with another name" end:"1706829099" entry:"1703270176" modified:"1706829099" status:"completed" tags:"improvement" tags_improvement:"x" uuid:"e1cb0eab-99e6-4287-8749-030310fdb638"]
 [annotation_1706829079:"Duplicate" description:"Info command, show environment and usefull stuff" end:"1706829079" entry:"1703267487" modified:"1706829079" status:"deleted" tags:"improvement" tags_improvement:"x" uuid:"02169206-dbd6-4bc7-a303-29aaf8731b32"]
 [description:"Call command: rename to request" end:"1706829022" entry:"1703009438" modified:"1706829022" status:"completed" tags:"improvement" tags_improvement:"x" uuid:"abba887a-bcba-4e3b-a7b5-a8f0c8c7d1cb"]

@@ -179,3 +179,39 @@ time 1706829230
 old [description:"request command: --dry-run option" entry:"1706297589" modified:"1706297589" status:"pending" tags:"idea" tags_idea:"x" uuid:"2f3809ca-277c-4fa3-a286-81d0ddd56f6b"]
 new [description:"request command: --dry-run option" entry:"1706297589" modified:"1706829230" status:"pending" uuid:"2f3809ca-277c-4fa3-a286-81d0ddd56f6b"]
 ---
+time 1706829331
+old [description:"Autocomplete for zsh" entry:"1669436952" modified:"1669436952" status:"pending" uuid:"e4006765-146b-4684-8411-1dbd542e16be"]
+new [description:"Autocomplete for zsh" entry:"1669436952" modified:"1706829331" priority:"H" status:"pending" uuid:"e4006765-146b-4684-8411-1dbd542e16be"]
+---
+time 1706829331
+old [description:"Autocomplete for bash" entry:"1669436954" modified:"1669436954" status:"pending" uuid:"560e81fe-023e-434b-9c44-42876601f7f1"]
+new [description:"Autocomplete for bash" entry:"1669436954" modified:"1706829331" priority:"H" status:"pending" uuid:"560e81fe-023e-434b-9c44-42876601f7f1"]
+---
+time 1706829331
+old [description:"Command to generate equivalent curl" entry:"1701721535" modified:"1701721535" status:"pending" uuid:"19e7791e-29b4-4c31-8dbf-31f549999b66"]
+new [description:"Command to generate equivalent curl" entry:"1701721535" modified:"1706829331" priority:"H" status:"pending" uuid:"19e7791e-29b4-4c31-8dbf-31f549999b66"]
+---
+time 1706829331
+old [description:"List command: show http verb before request name" entry:"1702320818" modified:"1702320818" status:"pending" uuid:"9bf13bd1-f64a-4741-94e3-78ecf243ace0"]
+new [description:"List command: show http verb before request name" entry:"1702320818" modified:"1706829331" priority:"H" status:"pending" uuid:"9bf13bd1-f64a-4741-94e3-78ecf243ace0"]
+---
+time 1706829331
+old [description:"New command: view request" entry:"1703703382" modified:"1706829221" status:"pending" uuid:"026da31f-0f35-4b77-85a7-28d9b366b6e5"]
+new [description:"New command: view request" entry:"1703703382" modified:"1706829331" priority:"H" status:"pending" uuid:"026da31f-0f35-4b77-85a7-28d9b366b6e5"]
+---
+time 1706829331
+old [description:"New command: remove request" entry:"1706822228" modified:"1706829221" status:"pending" uuid:"98d29c35-b81b-4b2f-ab27-e536e5ac254d"]
+new [description:"New command: remove request" entry:"1706822228" modified:"1706829331" priority:"H" status:"pending" uuid:"98d29c35-b81b-4b2f-ab27-e536e5ac254d"]
+---
+time 1706829564
+old [annotation_1669436837:"Everything after request name will be passed to another Argparse" description:"Create request parameters accordingly to whats defined in request file" entry:"1669436811" modified:"1669436837" status:"pending" uuid:"f0700701-b06d-4d61-9514-18da6d3ff812"]
+new [annotation_1669436837:"Everything after request name will be passed to another Argparse" annotation_1706829564:"Create request parameters accordingly to whats defined in request file" description:"Create request parameters accordingly to whats defined in request file" entry:"1669436811" modified:"1706829564" status:"pending" uuid:"f0700701-b06d-4d61-9514-18da6d3ff812"]
+---
+time 1706829582
+old [annotation_1669436837:"Everything after request name will be passed to another Argparse" annotation_1706829564:"Create request parameters accordingly to whats defined in request file" description:"Create request parameters accordingly to whats defined in request file" entry:"1669436811" modified:"1706829564" status:"pending" uuid:"f0700701-b06d-4d61-9514-18da6d3ff812"]
+new [annotation_1669436837:"Everything after request name will be passed to another Argparse" annotation_1706829564:"Create request parameters accordingly to whats defined in request file" description:"Request command: Change variables by command line" entry:"1669436811" modified:"1706829582" status:"pending" uuid:"f0700701-b06d-4d61-9514-18da6d3ff812"]
+---
+time 1706829594
+old [description:"Change variables by command line" entry:"1669436786" modified:"1669436786" status:"pending" uuid:"68f65047-e24e-4fa9-812b-99597f96c138"]
+new [annotation_1706829594:"Duplicate" description:"Change variables by command line" end:"1706829594" entry:"1669436786" modified:"1706829594" status:"deleted" uuid:"68f65047-e24e-4fa9-812b-99597f96c138"]
+---
