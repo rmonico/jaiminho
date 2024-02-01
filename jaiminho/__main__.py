@@ -11,7 +11,7 @@ import yaml
 import os
 import sys
 
-from .commands import list as list_command, call as call_command, edit as edit_command, new as new_command
+from .commands import list as list_command, call as call_command, edit as edit_command, new as new_command, remove as remove_command
 
 
 HOME_FOLDER_VARIABLE = 'JAIMINHO'
@@ -70,6 +70,11 @@ def _parse_command_line():
     new_parser.add_argument('name', help='New request name')
     new_parser.add_argument('--no-edit', '-ne', action='store_true', help='Dont edit request after create it')
     new_parser.set_defaults(command = new_command)
+
+
+    remove_parser = subparsers.add_parser('remove', aliases=['rm'], help='Remove one or more requests')
+    remove_parser.add_argument('request_names', nargs='+', help='Requests to remove')
+    remove_parser.set_defaults(command = remove_command)
 
 
     logger_wrapper.make_verbosity_argument(parser)
