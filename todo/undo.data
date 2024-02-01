@@ -139,3 +139,43 @@ new [description:"List command: accept a filter as parameter" entry:"1706820656"
 time 1706822228
 new [description:"New command: remove request" entry:"1706822228" modified:"1706822228" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"98d29c35-b81b-4b2f-ab27-e536e5ac254d"]
 ---
+time 1706829022
+old [description:"Call command: rename to request" entry:"1703009438" modified:"1703009438" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"abba887a-bcba-4e3b-a7b5-a8f0c8c7d1cb"]
+new [description:"Call command: rename to request" end:"1706829022" entry:"1703009438" modified:"1706829022" status:"completed" tags:"improvement" tags_improvement:"x" uuid:"abba887a-bcba-4e3b-a7b5-a8f0c8c7d1cb"]
+---
+time 1706829079
+old [description:"Info command, show environment and usefull stuff" entry:"1703267487" modified:"1703267487" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"02169206-dbd6-4bc7-a303-29aaf8731b32"]
+new [annotation_1706829079:"Duplicate" description:"Info command, show environment and usefull stuff" end:"1706829079" entry:"1703267487" modified:"1706829079" status:"deleted" tags:"improvement" tags_improvement:"x" uuid:"02169206-dbd6-4bc7-a303-29aaf8731b32"]
+---
+time 1706829099
+old [description:"New command: clone a request with another name" entry:"1703270176" modified:"1703270176" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"e1cb0eab-99e6-4287-8749-030310fdb638"]
+new [description:"New command: clone a request with another name" end:"1706829099" entry:"1703270176" modified:"1706829099" status:"completed" tags:"improvement" tags_improvement:"x" uuid:"e1cb0eab-99e6-4287-8749-030310fdb638"]
+---
+time 1706829221
+old [description:"Environment files: allow a \"global\" entry with environment-independent variables" entry:"1703266748" modified:"1703266748" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"784d2dc2-695c-4215-a123-981b32b52e85"]
+new [description:"Environment files: allow a \"global\" entry with environment-independent variables" entry:"1703266748" modified:"1706829221" status:"pending" uuid:"784d2dc2-695c-4215-a123-981b32b52e85"]
+---
+time 1706829221
+old [annotation_1703270204:"Show active environment, variable values, requests, etc" description:"New command: info command" entry:"1703270187" modified:"1703270204" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"524c4a0a-4146-4c1c-b624-9c5f7e886275"]
+new [annotation_1703270204:"Show active environment, variable values, requests, etc" description:"New command: info command" entry:"1703270187" modified:"1706829221" status:"pending" uuid:"524c4a0a-4146-4c1c-b624-9c5f7e886275"]
+---
+time 1706829221
+old [description:"New command: rename a request" entry:"1703698836" modified:"1703698836" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"68f6a3a2-25dd-464f-ab04-a02db19e103e"]
+new [description:"New command: rename a request" entry:"1703698836" modified:"1706829221" status:"pending" uuid:"68f6a3a2-25dd-464f-ab04-a02db19e103e"]
+---
+time 1706829221
+old [description:"New command: view request" entry:"1703703382" modified:"1703703382" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"026da31f-0f35-4b77-85a7-28d9b366b6e5"]
+new [description:"New command: view request" entry:"1703703382" modified:"1706829221" status:"pending" uuid:"026da31f-0f35-4b77-85a7-28d9b366b6e5"]
+---
+time 1706829221
+old [description:"List command: accept a filter as parameter" entry:"1706820656" modified:"1706820656" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"d63357ee-b8f3-4568-8760-2934fc1b57f8"]
+new [description:"List command: accept a filter as parameter" entry:"1706820656" modified:"1706829221" status:"pending" uuid:"d63357ee-b8f3-4568-8760-2934fc1b57f8"]
+---
+time 1706829221
+old [description:"New command: remove request" entry:"1706822228" modified:"1706822228" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"98d29c35-b81b-4b2f-ab27-e536e5ac254d"]
+new [description:"New command: remove request" entry:"1706822228" modified:"1706829221" status:"pending" uuid:"98d29c35-b81b-4b2f-ab27-e536e5ac254d"]
+---
+time 1706829230
+old [description:"request command: --dry-run option" entry:"1706297589" modified:"1706297589" status:"pending" tags:"idea" tags_idea:"x" uuid:"2f3809ca-277c-4fa3-a286-81d0ddd56f6b"]
+new [description:"request command: --dry-run option" entry:"1706297589" modified:"1706829230" status:"pending" uuid:"2f3809ca-277c-4fa3-a286-81d0ddd56f6b"]
+---
