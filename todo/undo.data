@@ -227,3 +227,6 @@ time 1706833259
 old [description:"New command: view request" entry:"1703703382" modified:"1706829331" priority:"H" status:"pending" uuid:"026da31f-0f35-4b77-85a7-28d9b366b6e5"]
 new [description:"New command: view request" end:"1706833259" entry:"1703703382" modified:"1706833259" priority:"H" status:"completed" uuid:"026da31f-0f35-4b77-85a7-28d9b366b6e5"]
 ---
+time 1706833607
+new [description:"Request command: support multipart requests" entry:"1706833607" modified:"1706833607" status:"pending" uuid:"b838a038-7527-4d36-8b02-57e5e13b835e"]
+---
