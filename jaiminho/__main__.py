@@ -11,7 +11,7 @@ import yaml
 import os
 import sys
 
-from .commands import list as list_command, call as call_command, edit as edit_command, new as new_command, remove as remove_command, view as view_command
+from .commands import list as list_command, call as call_command, edit as edit_command, new as new_command, remove as remove_command, view as view_command, export_curl as export_curl_command
 
 
 HOME_FOLDER_VARIABLE = 'JAIMINHO'
@@ -80,6 +80,14 @@ def _parse_command_line():
     view_parser = subparsers.add_parser('view', aliases=['v'], help='View one or more requests')
     view_parser.add_argument('request_names', nargs='+', help='Requests to view')
     view_parser.set_defaults(command = view_command)
+
+
+    export_parser = subparsers.add_parser('export', help='Export one or more requests')
+    export_subparsers = export_parser.add_subparsers()
+
+    export_curl_parser = export_subparsers.add_parser('curl', help='Export requests as curl')
+    export_curl_parser.add_argument('request_names', nargs='+', help='Requests to export')
+    export_curl_parser.set_defaults(command = export_curl_command)
 
 
     logger_wrapper.make_verbosity_argument(parser)
