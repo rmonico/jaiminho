@@ -62,3 +62,4 @@
 {"description":"Change variables by command line","end":"20240201T231954Z","entry":"20221126T042626Z","modified":"20240201T231954Z","status":"deleted","uuid":"68f65047-e24e-4fa9-812b-99597f96c138","annotations":[{"entry":"20240201T231954Z","description":"Duplicate"}]}
 {"description":"List command: show http verb before request name","end":"20240201T233645Z","entry":"20231211T185338Z","modified":"20240201T233645Z","priority":"H","status":"completed","uuid":"9bf13bd1-f64a-4741-94e3-78ecf243ace0"}
 {"description":"New command: remove request","end":"20240201T234909Z","entry":"20240201T211708Z","modified":"20240201T234909Z","priority":"H","status":"completed","uuid":"98d29c35-b81b-4b2f-ab27-e536e5ac254d"}
+{"description":"New command: view request","end":"20240202T002059Z","entry":"20231227T185622Z","modified":"20240202T002059Z","priority":"H","status":"completed","uuid":"026da31f-0f35-4b77-85a7-28d9b366b6e5"}

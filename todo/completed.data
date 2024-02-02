@@ -1,3 +1,4 @@
+[description:"New command: view request" end:"1706833259" entry:"1703703382" modified:"1706833259" priority:"H" status:"completed" uuid:"026da31f-0f35-4b77-85a7-28d9b366b6e5"]
 [description:"New command: remove request" end:"1706831349" entry:"1706822228" modified:"1706831349" priority:"H" status:"completed" uuid:"98d29c35-b81b-4b2f-ab27-e536e5ac254d"]
 [description:"List command: show http verb before request name" end:"1706830605" entry:"1702320818" modified:"1706830605" priority:"H" status:"completed" uuid:"9bf13bd1-f64a-4741-94e3-78ecf243ace0"]
 [annotation_1706829594:"Duplicate" description:"Change variables by command line" end:"1706829594" entry:"1669436786" modified:"1706829594" status:"deleted" uuid:"68f65047-e24e-4fa9-812b-99597f96c138"]
