@@ -1,4 +1,4 @@
-from jaiminho.commands.commons import request_file
+from jaiminho.commands.commons import request_file, create_request
 import os
 
 
@@ -9,14 +9,7 @@ def run(args):
         request_path = request_file(args.home_folder, request_name)
 
         if os.path.exists(request_path):
-            # TODO Load variable values! Reuse _load_environment
-            # _get_raw_request_data and _build_request from call.py
-            with open(request_path) as file:
-                import yaml
-
-                raw = yaml.safe_load(file)
-
-            request = raw['request']
+            request = create_request(args.home_folder, args.environment, request_name)
 
             command = 'curl -X {method} {url}'.format(**request)
 
@@ -45,4 +38,4 @@ def _headers(headers_):
 
 
 def _data(data):
-    return f"--data '{data}'"
+    return f" --data '{data}'"

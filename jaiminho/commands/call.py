@@ -1,7 +1,7 @@
 import os
 import requests
 import json
-from .commons import build_request, get_raw_request_data, load_environment
+from .commons import create_request
 import logger_wrapper
 
 
@@ -12,11 +12,7 @@ def run(args_):
     global args
     args = args_
 
-    environment = load_environment(args.home_folder, args.environment, args.request_name)
-
-    raw_data = get_raw_request_data(args.request_name)
-
-    request = build_request(args.home_folder, raw_data, environment)
+    request = create_request(args.home_folder, args.environment, args.request_name)
 
     response = _do_request(request)
 

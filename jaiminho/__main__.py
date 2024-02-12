@@ -52,7 +52,7 @@ def _parse_command_line():
     call_parser.set_defaults(command = call_command)
 
     call_parser.add_argument('request_name', help='Request name')
-    call_parser.add_argument('--environment', '-e', default='', help='Request name')
+    call_parser.add_argument('--environment', '-e', default='', help='Environment to use')
 
 
     list_parser = subparsers.add_parser('list', aliases = ['ls', 'l'] , help='List existing requests')
@@ -87,6 +87,7 @@ def _parse_command_line():
 
     export_curl_parser = export_subparsers.add_parser('curl', help='Export requests as curl')
     export_curl_parser.add_argument('request_names', nargs='+', help='Requests to export')
+    export_curl_parser.add_argument('--environment', '-e', default='', help='Environment to use')
     export_curl_parser.set_defaults(command = export_curl_command)
 
 

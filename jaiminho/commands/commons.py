@@ -57,7 +57,7 @@ def _format_all_strs(home_folder: str, environment: dict, obj: object) -> dict:
     return obj
 
 
-def load_environment(home_folder, environment_name, request_name):
+def _load_environment(home_folder, environment_name, request_name):
     concrete = dict()
 
     folders = request_name.split('/')
@@ -74,16 +74,22 @@ def load_environment(home_folder, environment_name, request_name):
     return _format_all_strs_on_dict(home_folder, concrete, dict(concrete))
 
 
-def get_raw_request_data(request_name):
-    global args
-
-    with open(request_file(args.home_folder, request_name)) as f:
+def _get_raw_request_data(home_folder, request_name):
+    with open(request_file(home_folder, request_name)) as f:
         return yaml.safe_load(f)
 
 
-def build_request(home_folder: str, data: dict, environment: dict) -> dict:
+def _build_request(home_folder: str, data: dict, environment: dict) -> dict:
     request = dict(data['request'])
 
     request = _format_all_strs_on_dict(home_folder, environment, request)
 
     return request
+
+
+def create_request(home_folder: str, environment: str, request_name: str) -> dict:
+    environment = _load_environment(home_folder, environment, request_name)
+
+    raw_data = _get_raw_request_data(home_folder, request_name)
+
+    return _build_request(home_folder, raw_data, environment)
