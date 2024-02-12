@@ -39,8 +39,10 @@ def run(args_):
 
     print(colorful_json)
 
-    if response['status_code']:
+    if response['status_code'] in range(200, 300):
         run_on_2xx_rules(raw_data, response['content'])
+    else:
+        logger.warn('Skipped 2xx rules, non-ok status returned')
 
 
 def _load_environment(environment_name, request_name):
