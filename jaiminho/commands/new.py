@@ -5,7 +5,7 @@ import subprocess
 
 
 def run(args):
-    request_path = request_file(args, args.name)
+    request_path = request_file(args.home_folder, args.name)
 
     request_dir = os.path.dirname(request_path)
 
@@ -16,7 +16,7 @@ def run(args):
         return 1
 
     if args.model:
-        model_path = request_file(args, args.model)
+        model_path = request_file(args.home_folder, args.model)
 
         shutil.copy(model_path, request_path)
     else:

@@ -8,7 +8,7 @@ def run(args):
     separator = '------'
 
     for i, request_name in enumerate(args.request_names):
-        request_path = request_file(args, request_name)
+        request_path = request_file(args.home_folder, request_name)
 
         if os.path.exists(request_path):
             with open(request_path) as file:
