@@ -234,3 +234,13 @@ time 1707779909
 old [description:"Command to generate equivalent curl" entry:"1701721535" modified:"1706829331" priority:"H" status:"pending" uuid:"19e7791e-29b4-4c31-8dbf-31f549999b66"]
 new [description:"Command to generate equivalent curl" end:"1707779909" entry:"1701721535" modified:"1707779909" priority:"H" status:"completed" uuid:"19e7791e-29b4-4c31-8dbf-31f549999b66"]
 ---
+time 1710361068
+new [description:"Request command: assign headers for all requests on specific folder" entry:"1710361068" modified:"1710361068" status:"pending" uuid:"785e904a-7ee2-4781-88f8-7db37670fd83"]
+---
+time 1710361297
+new [description:"Request command: in request file should exist only relevant information" entry:"1710361297" modified:"1710361297" status:"pending" uuid:"92241a10-3a23-4c01-8f8f-9754b7f254a8"]
+---
+time 1710361334
+old [description:"Request command: in request file should exist only relevant information" entry:"1710361297" modified:"1710361297" status:"pending" uuid:"92241a10-3a23-4c01-8f8f-9754b7f254a8"]
+new [annotation_1710361334:"A yaml extension mechanism should supply this" description:"Request command: in request file should exist only relevant information" entry:"1710361297" modified:"1710361334" status:"pending" uuid:"92241a10-3a23-4c01-8f8f-9754b7f254a8"]
+---

@@ -65,3 +65,6 @@
 {"description":"New command: view request","end":"20240202T002059Z","entry":"20231227T185622Z","modified":"20240202T002059Z","priority":"H","status":"completed","uuid":"026da31f-0f35-4b77-85a7-28d9b366b6e5"}
 {"description":"Request command: support multipart requests","entry":"20240202T002647Z","modified":"20240202T002647Z","status":"pending","uuid":"b838a038-7527-4d36-8b02-57e5e13b835e"}
 {"description":"Command to generate equivalent curl","end":"20240212T231829Z","entry":"20231204T202535Z","modified":"20240212T231829Z","priority":"H","status":"completed","uuid":"19e7791e-29b4-4c31-8dbf-31f549999b66"}
+{"description":"Request command: assign headers for all requests on specific folder","entry":"20240313T201748Z","modified":"20240313T201748Z","status":"pending","uuid":"785e904a-7ee2-4781-88f8-7db37670fd83"}
+{"description":"Request command: in request file should exist only relevant information","entry":"20240313T202137Z","modified":"20240313T202137Z","status":"pending","uuid":"92241a10-3a23-4c01-8f8f-9754b7f254a8"}
+{"description":"Request command: in request file should exist only relevant information","entry":"20240313T202137Z","modified":"20240313T202214Z","status":"pending","uuid":"92241a10-3a23-4c01-8f8f-9754b7f254a8","annotations":[{"entry":"20240313T202214Z","description":"A yaml extension mechanism should supply this"}]}
