@@ -9,7 +9,7 @@ def run(args):
         request_path = request_file(args.home_folder, request_name)
 
         if os.path.exists(request_path):
-            request = create_request(args.home_folder, args.environment, request_name)
+            request, raw_data = create_request(args.home_folder, args.environment, request_name)
 
             command = 'curl -X {method} {url}'.format(**request)
 

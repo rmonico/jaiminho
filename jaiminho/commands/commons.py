@@ -92,4 +92,4 @@ def create_request(home_folder: str, environment: str, request_name: str) -> dic
 
     raw_data = _get_raw_request_data(home_folder, request_name)
 
-    return _build_request(home_folder, raw_data, environment)
+    return _build_request(home_folder, raw_data, environment), raw_data
