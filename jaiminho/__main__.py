@@ -3,11 +3,7 @@
 
 import argparse
 import logger_wrapper
-# Disable warning due to certificate
-import urllib3
 
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-import yaml
 import os
 import sys
 
@@ -44,7 +40,6 @@ def _parse_command_line():
                         default=os.environ.get(HOME_FOLDER_VARIABLE,
                                                DEFAULT_HOME_FOLDER),
                         help='Set alternate home folder')
-
 
     subparsers = parser.add_subparsers()
 
