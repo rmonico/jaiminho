@@ -248,3 +248,6 @@ time 1717613934
 old [description:"List command: accept a filter as parameter" entry:"1706820656" modified:"1706829221" status:"pending" uuid:"d63357ee-b8f3-4568-8760-2934fc1b57f8"]
 new [description:"List command: accept a filter as parameter" end:"1717613934" entry:"1706820656" modified:"1717613934" status:"completed" uuid:"d63357ee-b8f3-4568-8760-2934fc1b57f8"]
 ---
+time 1717617434
+new [description:"Segregate requests into workspaces or something" entry:"1717617434" modified:"1717617434" status:"pending" uuid:"e508217c-553a-4874-86fa-d019d1688988"]
+---

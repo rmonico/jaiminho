@@ -14,3 +14,4 @@
 [description:"Request command: support multipart requests" entry:"1706833607" modified:"1706833607" status:"pending" uuid:"b838a038-7527-4d36-8b02-57e5e13b835e"]
 [description:"Request command: assign headers for all requests on specific folder" entry:"1710361068" modified:"1710361068" status:"pending" uuid:"785e904a-7ee2-4781-88f8-7db37670fd83"]
 [annotation_1710361334:"A yaml extension mechanism should supply this" description:"Request command: in request file should exist only relevant information" entry:"1710361297" modified:"1710361334" status:"pending" uuid:"92241a10-3a23-4c01-8f8f-9754b7f254a8"]
+[description:"Segregate requests into workspaces or something" entry:"1717617434" modified:"1717617434" status:"pending" uuid:"e508217c-553a-4874-86fa-d019d1688988"]

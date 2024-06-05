@@ -69,3 +69,4 @@
 {"description":"Request command: in request file should exist only relevant information","entry":"20240313T202137Z","modified":"20240313T202137Z","status":"pending","uuid":"92241a10-3a23-4c01-8f8f-9754b7f254a8"}
 {"description":"Request command: in request file should exist only relevant information","entry":"20240313T202137Z","modified":"20240313T202214Z","status":"pending","uuid":"92241a10-3a23-4c01-8f8f-9754b7f254a8","annotations":[{"entry":"20240313T202214Z","description":"A yaml extension mechanism should supply this"}]}
 {"description":"List command: accept a filter as parameter","end":"20240605T185854Z","entry":"20240201T205056Z","modified":"20240605T185854Z","status":"completed","uuid":"d63357ee-b8f3-4568-8760-2934fc1b57f8"}
+{"description":"Segregate requests into workspaces or something","entry":"20240605T195714Z","modified":"20240605T195714Z","status":"pending","uuid":"e508217c-553a-4874-86fa-d019d1688988"}
