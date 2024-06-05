@@ -11,7 +11,6 @@
 [description:"New command: rename a request" entry:"1703698836" modified:"1706829221" status:"pending" uuid:"68f6a3a2-25dd-464f-ab04-a02db19e103e"]
 [description:"List command: show as tree" entry:"1706297422" modified:"1706297422" status:"pending" uuid:"2587142f-0a33-4780-b6e5-e5b69082f9ca"]
 [description:"request command: --dry-run option" entry:"1706297589" modified:"1706829230" status:"pending" uuid:"2f3809ca-277c-4fa3-a286-81d0ddd56f6b"]
-[description:"List command: accept a filter as parameter" entry:"1706820656" modified:"1706829221" status:"pending" uuid:"d63357ee-b8f3-4568-8760-2934fc1b57f8"]
 [description:"Request command: support multipart requests" entry:"1706833607" modified:"1706833607" status:"pending" uuid:"b838a038-7527-4d36-8b02-57e5e13b835e"]
 [description:"Request command: assign headers for all requests on specific folder" entry:"1710361068" modified:"1710361068" status:"pending" uuid:"785e904a-7ee2-4781-88f8-7db37670fd83"]
 [annotation_1710361334:"A yaml extension mechanism should supply this" description:"Request command: in request file should exist only relevant information" entry:"1710361297" modified:"1710361334" status:"pending" uuid:"92241a10-3a23-4c01-8f8f-9754b7f254a8"]

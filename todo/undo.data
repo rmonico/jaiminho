@@ -244,3 +244,7 @@ time 1710361334
 old [description:"Request command: in request file should exist only relevant information" entry:"1710361297" modified:"1710361297" status:"pending" uuid:"92241a10-3a23-4c01-8f8f-9754b7f254a8"]
 new [annotation_1710361334:"A yaml extension mechanism should supply this" description:"Request command: in request file should exist only relevant information" entry:"1710361297" modified:"1710361334" status:"pending" uuid:"92241a10-3a23-4c01-8f8f-9754b7f254a8"]
 ---
+time 1717613934
+old [description:"List command: accept a filter as parameter" entry:"1706820656" modified:"1706829221" status:"pending" uuid:"d63357ee-b8f3-4568-8760-2934fc1b57f8"]
+new [description:"List command: accept a filter as parameter" end:"1717613934" entry:"1706820656" modified:"1717613934" status:"completed" uuid:"d63357ee-b8f3-4568-8760-2934fc1b57f8"]
+---

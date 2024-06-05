@@ -54,7 +54,11 @@ def _parse_command_line():
     call_parser.add_argument('--environment', '-e', default='', help='Environment to use')
 
 
-    list_parser = subparsers.add_parser('list', aliases = ['ls', 'l'] , help='List existing requests')
+    list_parser = subparsers.add_parser('list', aliases=['ls', 'l'], help='List existing requests')
+    list_parser.add_argument('--asterisk-glob', '-ag', action='store_true', help='Filter request names by a glob expression, appended with a * (the default)')
+    list_parser.add_argument('--glob', '-g', action='store_true', help='Filter request names by a glob expression')
+    list_parser.add_argument('--regex', '-r', action='store_true', help='Filter request names by a regex expression')
+    list_parser.add_argument('expression', nargs='*', default='*', help='Expression applied to request names')
     list_parser.set_defaults(command = list_command)
 
 
