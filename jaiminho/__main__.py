@@ -17,7 +17,7 @@ DEFAULT_HOME_FOLDER = '{HOME}/.config/jaiminho'.format(**os.environ)
 def main():
     global args
 
-    args = _parse_command_line()
+    parser, args = _parse_command_line()
 
     logger_wrapper.configure(args.verbosity)
     '''
@@ -25,6 +25,10 @@ def main():
     '''
     global logger
     logger = logger_wrapper.get(__name__)
+
+    if not hasattr(args, 'command'):
+        parser.print_help()
+        return 0
 
     return args.command.run(args)
 
@@ -88,7 +92,7 @@ def _parse_command_line():
 
     logger_wrapper.make_verbosity_argument(parser)
 
-    return parser.parse_args()
+    return parser, parser.parse_args()
 
 
 if __name__ == '__main__':
