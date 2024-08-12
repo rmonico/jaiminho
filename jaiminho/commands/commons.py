@@ -57,7 +57,7 @@ def _format_all_strs(home_folder: str, environment: dict, obj: object) -> dict:
     return obj
 
 
-def _load_environment(home_folder, environment_name, request_name):
+def _load_environment(home_folder, environment_name, request_name, variables):
     concrete = dict()
 
     folders = request_name.split('/')
@@ -71,7 +71,11 @@ def _load_environment(home_folder, environment_name, request_name):
 
     # FIXME This should only load external files, not inject environment into
     # itself
-    return _format_all_strs_on_dict(home_folder, concrete, dict(concrete))
+    environment = _format_all_strs_on_dict(home_folder, concrete, dict(concrete))
+
+    environment.update(variables)
+
+    return environment
 
 
 def _get_raw_request_data(home_folder, request_name):
@@ -87,8 +91,8 @@ def _build_request(home_folder: str, data: dict, environment: dict) -> dict:
     return request
 
 
-def create_request(home_folder: str, environment: str, request_name: str) -> dict:
-    environment = _load_environment(home_folder, environment, request_name)
+def create_request(home_folder: str, environment: str, request_name: str, variables: dict) -> dict:
+    environment = _load_environment(home_folder, environment, request_name, variables)
 
     raw_data = _get_raw_request_data(home_folder, request_name)
 

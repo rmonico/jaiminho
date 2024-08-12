@@ -33,6 +33,19 @@ def main():
     return args.command.run(args)
 
 
+def var_list(raw):
+    key_values = raw.split(',')
+
+    result = dict()
+
+    for key_value in key_values:
+        key, value = key_value.split('=')
+
+        result[key] = value
+
+    return result
+
+
 def _parse_command_line():
     '''
     Reference: https://docs.python.org/3/library/argparse.html
@@ -52,6 +65,7 @@ def _parse_command_line():
 
     call_parser.add_argument('request_name', help='Request name')
     call_parser.add_argument('--environment', '-e', default='', help='Environment to use')
+    call_parser.add_argument('--variables', '-v', type=var_list, default=[], help='Variables list, ex: "a=b,c=3"')
 
 
     list_parser = subparsers.add_parser('list', aliases=['ls', 'l'], help='List existing requests')
@@ -91,6 +105,7 @@ def _parse_command_line():
     export_curl_parser = export_subparsers.add_parser('curl', help='Export requests as curl')
     export_curl_parser.add_argument('request_names', nargs='+', help='Requests to export')
     export_curl_parser.add_argument('--environment', '-e', default='', help='Environment to use')
+    export_curl_parser.add_argument('--variables', '-v', type=var_list, default=[], help='Variables list, ex: "a=b,c=3"')
     export_curl_parser.set_defaults(command = export_curl_command)
 
 

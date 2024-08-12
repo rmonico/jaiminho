@@ -12,7 +12,7 @@ def run(args_):
     global args
     args = args_
 
-    request, raw_data = create_request(args.home_folder, args.environment, args.request_name)
+    request, raw_data = create_request(args.home_folder, args.environment, args.request_name, args.variables)
 
     response = _do_request(request)
 
