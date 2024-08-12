@@ -1,0 +1,22 @@
+# vim: ft=taskrc
+
+uda.reminder.type=date
+uda.reminder.label=Reminder
+
+uda.n.type=numeric
+uda.n.label=Ordem
+
+uda.jira.type=string
+uda.jira.label=Jira
+
+uda.from.type=date
+uda.from.label=From
+
+uda.to.type=date
+uda.to.label=To
+
+uda.duracao.type=string
+uda.duracao.label=Duração
+
+uda.stats.type=string
+uda.stats.label=Status

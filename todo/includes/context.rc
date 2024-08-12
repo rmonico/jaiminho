@@ -1,0 +1,46 @@
+# vim: ft=taskrc
+
+# Contexto pessoal: Compartilha tarefas com outros contextos. Esses contextos estão fracamente separados entre si.
+context.pessoal.read=project.not:trampo project.not:1-1 project.not:setup project.not:limpeza project.not:dev project.not:carreira -rua -farmacia -feira -acompanhar
+
+context.acompanhar.read=+acompanhar
+context.acompanhar.write=+acompanhar
+
+context.casa.read=project:casa
+context.casa.write=project:casa
+
+context.grana.read=project:grana
+context.grana.write=project:grana
+
+context.organizacao.read=project:organizacao
+context.organizacao.write=project:organizacao
+
+context.saude.read=project:saude
+context.saude.write=project:saude
+
+
+# Contextos / projetos fortemente separados, suas tarefas só aparece nos respectivos contextos
+context.trampo.read=project:trampo
+context.trampo.write=project:trampo
+
+context.1-1.read=project:1-1
+context.1-1.write=project:1-1
+
+context.setup.read=project:setup
+context.setup.write=project:setup
+
+context.limpeza.read=project:limpeza
+context.limpeza.write=project:limpeza
+
+context.dev.read=project:dev
+context.dev.write=project:dev
+
+context.carreira.read=project:carreira
+context.carreira.write=project:carreira
+
+context.rua.read=+rua or +mercado or +farmacia
+context.rua.write=+rua
+
+context.feira.read=+feira
+context.feira.write=+feira
+

@@ -1,0 +1,9 @@
+# vim: ft=taskrc
+
+taskd.ca=/home/rmonico/.task/certs/ca.cert.pem
+taskd.certificate=/home/rmonico/.task/certs/rmonico.cert.pem
+taskd.key=/home/rmonico/.task/certs/rmonico.key.pem
+
+taskd.server=monico.dev:53589
+taskd.credentials=Rafael Monico/rmonico/4309cc96-5ed6-44a7-ae16-09a27168a884
+

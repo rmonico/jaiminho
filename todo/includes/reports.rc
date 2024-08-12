@@ -1,0 +1,121 @@
+# vim: ft=taskrc
+
+# Todos os atributos :: Label,
+# uuid.short, :: UUID,
+# depends.list, :: Dependências,
+# description.combined, :: Título,
+# due.remaining, :: Vencimento,
+# end.formatted, :: Final,
+# entry.formatted, :: Lançamento,
+# imask, :: imask?,
+# mask, :: mask?,
+# modified.formatted, :: Modificação,
+# parent.short, :: Pai,
+# priority, :: Prioridade,
+# project.indented, :: Projeto,
+# recur.duration, :: Recorrência,
+# scheduled.formatted, :: Data,
+# start.formatted, :: Início,
+# status.long, :: Status,
+# tags.list, :: Tags,
+# until.formatted, :: Duração,
+# urgency.real, :: Urgência,
+# wait.formatted, :: Espera,
+
+
+# Custom report
+#report.reportname.description=<Descrição que aparece no comando "task reports">
+#report.reportname.columns=<atributos separados por , : uuid.short,mask>
+#report.reportname.labels=<Títulos das colunas do relatório, deve ter a mesma quantidade de itens do columns, também separado por ,>
+#report.reportname.filter=maestroid.any: and status:pending and description.startswith:\+
+#report.reportname.sort=n+,project+/,priority-,due+,description+
+
+report.agora.description=Tarefas para fazer hoje, com prioridade alta
+report.agora.columns=id,n,depends,description.count,jira,priority,project,stats,due,scheduled,tags
+report.agora.labels=ID,N,Deps,Descrição,Jira,P,Projeto,Status,Vencto,Data,Tags
+report.agora.filter=status:pending +hoje prio:H
+report.agora.sort=n+,project+/,priority-,due+,description+
+
+
+report.next.description=Contexto completo, sem outros filtros
+report.next.columns=id,n,depends,description.count,jira,priority,project,stats,due,scheduled,tags
+report.next.labels=ID,N,Deps,Descrição,Jira,P,Projeto,Status,Vencto,Data,Tags
+report.next.filter=status:pending
+report.next.sort=n+,project+/,priority-,due+,description+
+
+
+report.hoje.description=Tarefas do dia
+report.hoje.columns=id,n,jira,depends,description.count,priority,project,due,scheduled,tags
+report.hoje.labels=ID,N,Jira,Deps,Descrição,P,Projeto,Vencto,Data,Tags
+report.hoje.filter=status:pending +hoje
+report.hoje.sort=n+,project+/,priority-,due+,description+
+
+
+report.semana.description=Tarefas da semana
+report.semana.columns=id,n,jira,depends,description.count,priority,project,due,scheduled,tags
+report.semana.labels=ID,N,Jira,Deps,Descrição,P,Projeto,Vencto,Data,Tags
+report.semana.filter=status:pending +semana
+report.semana.sort=n+,project+/,priority-,due+,description+
+
+
+report.restante.description=Tarefas que não estão em hoje ou semana
+report.restante.columns=id,n,jira,depends,description.count,priority,project,due,scheduled,tags
+report.restante.labels=ID,N,Jira,Deps,Descrição,P,Projeto,Vencto,Data,Tags
+report.restante.filter=status:pending -semana -hoje -rua -acompanhar -longo project.none:
+report.restante.sort=n+,project+/,priority-,due+,description+
+
+
+report.agenda.description=Itens agendados (via sched ou due)
+report.agenda.columns=id,due,scheduled,jira,depends,description.count,priority,project,tags
+report.agenda.labels=ID,Vencto,Data,Jira,Deps,Descrição,P,Projeto,Tags
+report.agenda.filter=status:pending sched.any: or status:pending due.any:
+report.agenda.sort=n+,project+/,priority-,due+,description+
+
+
+report.andamento.description=Assuntos em aberto
+report.andamento.columns=id,n,jira,depends,description.count,priority,project,due,scheduled,tags
+report.andamento.labels=ID,N,Jira,Deps,Descrição,P,Projeto,Vencto,Data,Tags
+report.andamento.filter=status:pending +acompanhar
+report.andamento.sort=n+,project+/,priority-,due+,description+
+
+
+report.casa.description=Tarefas de casa
+report.casa.columns=id,n,jira,depends,description.count,priority,project,due,scheduled,tags
+report.casa.labels=ID,N,Jira,Deps,Descrição,P,Projeto,Vencto,Data,Tags
+report.casa.filter=status:pending +casa
+report.casa.sort=n+,project+/,priority-,due+,description+
+
+
+report.mercado.description=Comprar no mercado
+report.mercado.columns=id,n,jira,depends,description.count,priority,project,due,scheduled,tags
+report.mercado.labels=ID,N,Jira,Deps,Descrição,P,Projeto,Vencto,Data,Tags
+report.mercado.filter=status:pending +mercado
+report.mercado.sort=n+,project+/,priority-,due+,description+
+
+
+report.feira.description=Comprar na feira
+report.feira.columns=id,n,jira,depends,description.count,priority,project,due,scheduled,tags
+report.feira.labels=ID,N,Jira,Deps,Descrição,P,Projeto,Vencto,Data,Tags
+report.feira.filter=status:pending +feira
+report.feira.sort=n+,project+/,priority-,due+,description+
+
+
+report.carreira.description=Tarefas de carreira
+report.carreira.columns=id,n,jira,depends,description.count,priority,project,due,scheduled,tags
+report.carreira.labels=ID,N,Jira,Deps,Descrição,P,Projeto,Vencto,Data,Tags
+report.carreira.filter=status:pending project:carreira
+report.carreira.sort=n+,project+/,priority-,due+,description+
+
+
+report.longo.description=Tarefas de longa duração
+report.longo.columns=id,n,jira,depends,description.count,priority,project,due,scheduled,tags
+report.longo.labels=ID,N,Jira,Deps,Descrição,P,Projeto,Vencto,Data,Tags
+report.longo.filter=status:pending (+longo or +perene)
+report.longo.sort=n+,project+/,priority-,due+,description+
+
+
+report.rua.description=Coisas para fazer na rua
+report.rua.columns=id,n,jira,depends,description.count,priority,project,due,scheduled,tags
+report.rua.labels=ID,N,Jira,Deps,Descrição,P,Projeto,Vencto,Data,Tags
+report.rua.filter=status:pending +rua
+report.rua.sort=n+,project+/,priority-,due+,description+

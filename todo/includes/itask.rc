@@ -1,0 +1,4 @@
+# vim: ft=taskrc
+
+itask.ignored_reports=_reviewed,active,all,blocked,blocking,burndown.daily,burndown.monthly,burndown.weekly,completed,ghistory.annual,ghistory.monthly,history.annual,history.monthly,information,list,long,ls,minimal,newest,oldest,overdue,projects,ready,recurring,summary,tags,unblocked
+
