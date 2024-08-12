@@ -15,3 +15,5 @@
 [description:"Request command: assign headers for all requests on specific folder" entry:"1710361068" modified:"1710361068" status:"pending" uuid:"785e904a-7ee2-4781-88f8-7db37670fd83"]
 [annotation_1710361334:"A yaml extension mechanism should supply this" description:"Request command: in request file should exist only relevant information" entry:"1710361297" modified:"1710361334" status:"pending" uuid:"92241a10-3a23-4c01-8f8f-9754b7f254a8"]
 [description:"Segregate requests into workspaces or something" entry:"1717617434" modified:"1717617434" status:"pending" uuid:"e508217c-553a-4874-86fa-d019d1688988"]
+[description:"Port to use argparse_decorations" entry:"1723473695" modified:"1723473695" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"9865f170-decb-43e9-84b3-2ea23b915444"]
+[description:"Export curl command: dont parse variables from command line" entry:"1723474926" modified:"1723474926" status:"pending" tags:"bug" tags_bug:"x" uuid:"325d1674-d561-4cd4-823b-81042cd97c1d"]

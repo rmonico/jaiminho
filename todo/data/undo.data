@@ -251,3 +251,9 @@ new [description:"List command: accept a filter as parameter" end:"1717613934" e
 time 1717617434
 new [description:"Segregate requests into workspaces or something" entry:"1717617434" modified:"1717617434" status:"pending" uuid:"e508217c-553a-4874-86fa-d019d1688988"]
 ---
+time 1723473695
+new [description:"Port to use argparse_decorations" entry:"1723473695" modified:"1723473695" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"9865f170-decb-43e9-84b3-2ea23b915444"]
+---
+time 1723474926
+new [description:"Export curl command: dont parse variables from command line" entry:"1723474926" modified:"1723474926" status:"pending" tags:"bug" tags_bug:"x" uuid:"325d1674-d561-4cd4-823b-81042cd97c1d"]
+---
