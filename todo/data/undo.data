@@ -261,3 +261,71 @@ time 1723647791
 old [annotation_1669436837:"Everything after request name will be passed to another Argparse" annotation_1706829564:"Create request parameters accordingly to whats defined in request file" description:"Request command: Change variables by command line" entry:"1669436811" modified:"1706829582" status:"pending" uuid:"f0700701-b06d-4d61-9514-18da6d3ff812"]
 new [annotation_1669436837:"Everything after request name will be passed to another Argparse" annotation_1706829564:"Create request parameters accordingly to whats defined in request file" annotation_1723647791:"Palliative solution: a variable list parameter" description:"Request command: Change variables by command line" entry:"1669436811" modified:"1723647791" status:"pending" uuid:"f0700701-b06d-4d61-9514-18da6d3ff812"]
 ---
+time 1723647911
+old [annotation_1669436837:"Everything after request name will be passed to another Argparse" annotation_1706829564:"Create request parameters accordingly to whats defined in request file" annotation_1723647791:"Palliative solution: a variable list parameter" description:"Request command: Change variables by command line" entry:"1669436811" modified:"1723647791" status:"pending" uuid:"f0700701-b06d-4d61-9514-18da6d3ff812"]
+new [annotation_1669436837:"Everything after request name will be passed to another Argparse" annotation_1706829564:"Create request parameters accordingly to whats defined in request file" annotation_1723647791:"Palliative solution: a variable list parameter" description:"Request command: Change variables by command line" entry:"1669436811" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"f0700701-b06d-4d61-9514-18da6d3ff812"]
+---
+time 1723647911
+old [annotation_1669436939:"That is: It must be possible to pass a field of another request to a header in current request" description:"Generate auth tokens for requests" entry:"1669436852" modified:"1669436939" status:"pending" uuid:"b5eece51-6dfd-4ca9-b73a-388f67b7982c"]
+new [annotation_1669436939:"That is: It must be possible to pass a field of another request to a header in current request" description:"Generate auth tokens for requests" entry:"1669436852" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"b5eece51-6dfd-4ca9-b73a-388f67b7982c"]
+---
+time 1723647911
+old [description:"Autocomplete for zsh" entry:"1669436952" modified:"1706829331" priority:"H" status:"pending" uuid:"e4006765-146b-4684-8411-1dbd542e16be"]
+new [description:"Autocomplete for zsh" entry:"1669436952" modified:"1723647911" priority:"H" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"e4006765-146b-4684-8411-1dbd542e16be"]
+---
+time 1723647911
+old [description:"Autocomplete for bash" entry:"1669436954" modified:"1706829331" priority:"H" status:"pending" uuid:"560e81fe-023e-434b-9c44-42876601f7f1"]
+new [description:"Autocomplete for bash" entry:"1669436954" modified:"1723647911" priority:"H" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"560e81fe-023e-434b-9c44-42876601f7f1"]
+---
+time 1723647911
+old [description:"Swagger import" entry:"1669436961" modified:"1669436961" status:"pending" uuid:"1f94ddcb-f83a-437b-b801-38bea7ebda38"]
+new [description:"Swagger import" entry:"1669436961" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"1f94ddcb-f83a-437b-b801-38bea7ebda38"]
+---
+time 1723647911
+old [description:"Save all history to a TinyDB or SQLite" entry:"1669436974" modified:"1669439137" status:"pending" uuid:"1bda7bf7-387d-4ab5-ab6f-b95682a2309e"]
+new [description:"Save all history to a TinyDB or SQLite" entry:"1669436974" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"1bda7bf7-387d-4ab5-ab6f-b95682a2309e"]
+---
+time 1723647911
+old [description:"Save token by environment" entry:"1701969612" modified:"1701969612" status:"pending" uuid:"975118eb-f469-40de-8fcf-4be5037b1b9a"]
+new [description:"Save token by environment" entry:"1701969612" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"975118eb-f469-40de-8fcf-4be5037b1b9a"]
+---
+time 1723647911
+old [description:"Find a solution to store passwords" entry:"1703265549" modified:"1703265549" status:"pending" uuid:"500e271e-ca05-4112-a4fa-4536cefcaa86"]
+new [description:"Find a solution to store passwords" entry:"1703265549" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"500e271e-ca05-4112-a4fa-4536cefcaa86"]
+---
+time 1723647911
+old [description:"Environment files: allow a \"global\" entry with environment-independent variables" entry:"1703266748" modified:"1706829221" status:"pending" uuid:"784d2dc2-695c-4215-a123-981b32b52e85"]
+new [description:"Environment files: allow a \"global\" entry with environment-independent variables" entry:"1703266748" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"784d2dc2-695c-4215-a123-981b32b52e85"]
+---
+time 1723647911
+old [annotation_1703270204:"Show active environment, variable values, requests, etc" description:"New command: info command" entry:"1703270187" modified:"1706829221" status:"pending" uuid:"524c4a0a-4146-4c1c-b624-9c5f7e886275"]
+new [annotation_1703270204:"Show active environment, variable values, requests, etc" description:"New command: info command" entry:"1703270187" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"524c4a0a-4146-4c1c-b624-9c5f7e886275"]
+---
+time 1723647911
+old [description:"New command: rename a request" entry:"1703698836" modified:"1706829221" status:"pending" uuid:"68f6a3a2-25dd-464f-ab04-a02db19e103e"]
+new [description:"New command: rename a request" entry:"1703698836" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"68f6a3a2-25dd-464f-ab04-a02db19e103e"]
+---
+time 1723647911
+old [description:"List command: show as tree" entry:"1706297422" modified:"1706297422" status:"pending" uuid:"2587142f-0a33-4780-b6e5-e5b69082f9ca"]
+new [description:"List command: show as tree" entry:"1706297422" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"2587142f-0a33-4780-b6e5-e5b69082f9ca"]
+---
+time 1723647911
+old [description:"request command: --dry-run option" entry:"1706297589" modified:"1706829230" status:"pending" uuid:"2f3809ca-277c-4fa3-a286-81d0ddd56f6b"]
+new [description:"request command: --dry-run option" entry:"1706297589" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"2f3809ca-277c-4fa3-a286-81d0ddd56f6b"]
+---
+time 1723647911
+old [description:"Request command: support multipart requests" entry:"1706833607" modified:"1706833607" status:"pending" uuid:"b838a038-7527-4d36-8b02-57e5e13b835e"]
+new [description:"Request command: support multipart requests" entry:"1706833607" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"b838a038-7527-4d36-8b02-57e5e13b835e"]
+---
+time 1723647911
+old [description:"Request command: assign headers for all requests on specific folder" entry:"1710361068" modified:"1710361068" status:"pending" uuid:"785e904a-7ee2-4781-88f8-7db37670fd83"]
+new [description:"Request command: assign headers for all requests on specific folder" entry:"1710361068" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"785e904a-7ee2-4781-88f8-7db37670fd83"]
+---
+time 1723647911
+old [annotation_1710361334:"A yaml extension mechanism should supply this" description:"Request command: in request file should exist only relevant information" entry:"1710361297" modified:"1710361334" status:"pending" uuid:"92241a10-3a23-4c01-8f8f-9754b7f254a8"]
+new [annotation_1710361334:"A yaml extension mechanism should supply this" description:"Request command: in request file should exist only relevant information" entry:"1710361297" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"92241a10-3a23-4c01-8f8f-9754b7f254a8"]
+---
+time 1723647911
+old [description:"Segregate requests into workspaces or something" entry:"1717617434" modified:"1717617434" status:"pending" uuid:"e508217c-553a-4874-86fa-d019d1688988"]
+new [description:"Segregate requests into workspaces or something" entry:"1717617434" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"e508217c-553a-4874-86fa-d019d1688988"]
+---
