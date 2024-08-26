@@ -17,3 +17,4 @@
 [description:"Segregate requests into workspaces or something" entry:"1717617434" modified:"1723647911" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"e508217c-553a-4874-86fa-d019d1688988"]
 [description:"Port to use argparse_decorations" entry:"1723473695" modified:"1723473695" status:"pending" tags:"improvement" tags_improvement:"x" uuid:"9865f170-decb-43e9-84b3-2ea23b915444"]
 [description:"Export curl command: dont parse variables from command line" entry:"1723474926" modified:"1723474926" status:"pending" tags:"bug" tags_bug:"x" uuid:"325d1674-d561-4cd4-823b-81042cd97c1d"]
+[description:"When there are no __environment__ file in a folder it raises an exception" entry:"1724695025" modified:"1724695025" status:"pending" tags:"bug" tags_bug:"x" uuid:"1672dd92-fd0e-4fe8-be54-0deffaec39d5"]
